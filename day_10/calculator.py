@@ -1,5 +1,7 @@
+from calculator_art import logo
 
-# Calculator
+# Calculator logo
+print(logo)
 
 # Addition
 def add(n1, n2):
@@ -86,7 +88,7 @@ while calculating:
 def calculator():
     '''Function utilises recursion.'''
 
-    num_1 = int(input("\nWhat's the first number?: "))
+    num_1 = float(input("\nWhat's the first number?: "))
     for symbol in operations:
         print(symbol)
 
@@ -94,7 +96,7 @@ def calculator():
 
     while should_continue:
         operation_symbol = input("Pick an operation: ")
-        num_2 = int(input("What's the next number?: "))
+        num_2 = float(input("What's the next number?: "))
         calculation_function = operations[operation_symbol]
         answer = calculation_function(num_1, num_2)
 
@@ -114,13 +116,4 @@ def calculator():
 
 calculator()
 
-
-''' MAY NOT NEED
-    operation_symbol = input("Pick another operation: ")
-    num_3 = int(input("What's the next number?: "))
-    calculation_function = operations[operation_symbol]
-    second_answer = calculation_function(first_answer, num_3)
-
-    print(f"{first_answer} {operation_symbol} {num_3} = {second_answer}")
-'''
 
