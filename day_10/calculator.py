@@ -83,8 +83,6 @@ while calculating:
         break
 '''
 
-
-
 def calculator():
     '''Function utilises recursion.'''
 
@@ -109,10 +107,6 @@ def calculator():
         else:
             should_continue = False
             calculator()
-
-
-
-
 
 calculator()
 
