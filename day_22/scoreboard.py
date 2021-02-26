@@ -1,4 +1,5 @@
 from turtle import Turtle
+import time
 
 
 class Scoreboard(Turtle):
@@ -33,3 +34,14 @@ class Scoreboard(Turtle):
         self.clear()
         self.right_score += 1
         self.update_scores()
+    
+    def player_win(self):
+        """Game ends when either paddle reaches 10 points."""
+        if self.left_score == 10:
+            self.goto(0, 0)
+            self.write(f"Left paddle wins with {self.left_score} points.",
+                       align="center", font=("Comic Sans MS", 20, "normal"))
+        elif self.right_score == 10:
+            self.goto(0, 0)
+            self.write(f"Right paddle wins with {self.right_score} points.",
+                       align="center", font=("Comic Sans MS", 20, "normal"))
