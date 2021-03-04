@@ -30,6 +30,14 @@ class Snake:
         snake_segment.goto(position)
         self.segments.append(snake_segment)
 
+    def reset_snake(self):
+        """Resets the snake to its starting length and position."""
+        for segment in self.segments:
+            segment.goto(1000, 1000)
+        self.segments.clear()
+        self.create_snake()
+        self.snake_head = self.segments[0]
+
     def extend(self):
         """Extends snake by 1 additional segment when snake successfully eats
         food, via add_segment()"""

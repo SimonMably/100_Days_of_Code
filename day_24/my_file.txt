@@ -1,0 +1,4 @@
+This is my_file.txt
+My name is Simon.
+I am 31 years old.
+My favourite food is pepperoni pizza.

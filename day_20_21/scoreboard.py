@@ -2,7 +2,7 @@ from turtle import Turtle
 
 TEXT_Y_POSITION = 275
 ALIGNMENT = "center"
-FONT = ("Ebrima", 12, "normal")
+FONT = ("Courier", 13, "normal")
 
 
 class Scoreboard(Turtle):
@@ -10,6 +10,9 @@ class Scoreboard(Turtle):
 
     def __init__(self):
         super().__init__()
+        # 'data.txt' is used to store the games high score
+        self.file = open("data.txt")
+        self.high_score = self.file.read()
         self.score = 0
         self.penup()
         self.goto(x=0, y=TEXT_Y_POSITION)
@@ -21,17 +24,25 @@ class Scoreboard(Turtle):
         """Displays players score at the top of the screen. Clears previous
         score from screen and displays new score every time player snake
         eats food."""
-        self.write(f"Score: {self.score}", align=ALIGNMENT, font=FONT)
+        self.clear()
+        self.write(f"Score: {self.score}, High Score: {self.high_score}", 
+                   align=ALIGNMENT, font=FONT)
 
     def increase_score(self):
         """Increases players score each time player controlled snake gets
         food."""
         self.score += 1
-        self.clear()
-        # Updating score works without calling:
-        # self.display_score()
 
-    def game_over(self):
-        """Enacts Game Over when snake collides with itself or a wall."""
-        self.goto(0, 0)
-        self.write(f"GAME OVER!!", align=ALIGNMENT, font=FONT)
+    def reset_score(self):
+        """Checks if score is greater than the high score. If true, set score to
+        as high score. Then resets score to 0."""
+        if self.score > int(self.high_score):
+            # Opens 'data.txt', writes high score
+            self.file = open("data.txt", "w")
+            self.file.write(str(self.score))
+            self.file.close()
+
+        self.file = open("data.txt")
+        self.high_score = self.file.read()
+        self.score = 0
+        # self.display_score()
