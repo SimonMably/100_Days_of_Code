@@ -1,11 +1,14 @@
 
 
 class Player:
+    """"""
 
     def __init__(self):
-        self.player_cards = []
-        
+        self.cards = []        
 
+    def add_card(self):
+        """"""
+        pass
 
 
 

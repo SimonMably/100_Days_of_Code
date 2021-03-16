@@ -33,12 +33,9 @@ while is_user_guessing:
     if answer_state == "exit" or answer_state == "Exit":
         is_user_guessing = False
         # States that are not guessed to be saved to a csv file
-        missing_states = []
-        for state in state_names:
-            if state not in correct_guesses:
-                missing_states.append(state)
-                missing_state_data = pd.DataFrame(missing_states)
-                missing_state_data.to_csv("states_to_learn.csv")
+        missing_states = [state for state in state_names if state not in correct_guesses]
+        missing_state_data = pd.DataFrame(missing_states)
+        missing_state_data.to_csv("states_to_learn.csv")
     elif answer_state.title() in correct_guesses:
         # Pass if guess has already been guessed
         pass

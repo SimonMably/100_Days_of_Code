@@ -1,16 +1,18 @@
 import random
-from deck import Deck
+from cards import Card
 
 
 class Dealer:
 
     def __init__(self):
-        self.dealer_cards = []
-        self.deck = Deck()
+        self.card = Card()
+        self.cards = []
 
     def deal_card(self):
-        """"""
-        random_card = random.choice(self.deck.cards)
+        """Deals cards to player and dealer."""
+        random_card = random.choice(self.card.cards)
+        random_suit = random.choice(self.card.suits)
+        return f"{random_card} of {random_suit}"
 
 
 
