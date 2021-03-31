@@ -3,6 +3,7 @@ from tkinter import *
 from tkinter import messagebox
 from tkinter import ttk
 import pyperclip
+import json
 
 
 # -------------------------- PASSWORD GENERATOR ------------------------------ #
@@ -45,12 +46,12 @@ def save_login_details():
     website = website_entry.get()
     email_username = email_username_entry.get()
     password = password_entry.get()
-
-    is_ok = messagebox.askokcancel(title=f"Login details for {website}",
-                                   message="These are the entered details: \n"
-                                           f"Email: {email_username}\n"
-                                           f"Password: {password}\n"
-                                           "Is this ok?")
+    new_data = {
+        website.title(): {
+            "email": email_username,
+            "password": password,
+        }
+    }
 
     if len(website) == 0 or len(password) == 0:
         messagebox.showinfo(title="Empty Fields",
@@ -58,11 +59,47 @@ def save_login_details():
                                     "Fill them in before clicking the Add "
                                     "button.")
     else:
-        if is_ok:
-            with open("login_details.txt", "a") as f:
-                f.write(f"{website} | {email_username} | {password}\n")
+        try:
+            with open("login_details.json", "r") as f:
+                # Reading old data
+                data = json.load(f)
+        except FileNotFoundError:
+            with open("login_details.json", "w") as f:
+                json.dump(new_data, f, indent=4)
+        else:
+            # Updating old data with new data
+            data.update(new_data)
+
+            with open("login_details.json", "w") as f:
+                # Saving updated data
+                json.dump(data, f, indent=4)
+        finally:
             website_entry.delete(0, END)
             password_entry.delete(0, END)
+
+
+# ----------------------------- SEARCH PASSWORD ------------------------------ #
+def find_password():
+    """IF user presses 'Search """
+    website = website_entry.get().title()
+    try:
+        with open("login_details.json", "r") as f:
+            data = json.load(f)
+            if website not in data:
+                raise KeyError
+    except KeyError:
+        messagebox.showerror(title="Error!",
+                             message="No details for the website exists.")
+    except FileNotFoundError:
+        messagebox.showerror(title="Error", message="No Data File Found.")
+    else:
+        messagebox.showinfo(title="Password Found",
+                            message=f"Website: {website}\n"
+                                    f"Email: {data[website]['email']}\n"
+                                    f"Password: {data[website]['password']}")
+    finally:
+        website_entry.delete(0, END)
+        website_entry.focus()
 
 
 # -------------------------------- UI SETUP ---------------------------------- #
@@ -80,32 +117,37 @@ website_label = Label(text="Website:")
 website_label.grid(column=0, row=1)
 
 # website entry
-website_entry = ttk.Entry(width=40)
-website_entry.grid(column=1, row=1, columnspan=2)
+website_entry = ttk.Entry()
+website_entry.grid(column=1, row=1, sticky="ew")
 website_entry.focus()
+
+# Search button
+search_button = ttk.Button(text="Search", command=find_password)
+search_button.grid(column=2, row=1, sticky="ew")
 
 # email/username label and entry
 email_username_label = Label(text="Email/Username:")
 email_username_label.grid(column=0, row=2)
 
-email_username_entry = ttk.Entry(width=40)
-email_username_entry.grid(column=1, row=2, columnspan=2)
+email_username_entry = ttk.Entry()
+email_username_entry.grid(column=1, row=2, columnspan=2, sticky="ew")
+
 email_username_entry.insert(0, "email@mail.com")
 
 # password label and entry
 password_label = Label(text="Password:")
 password_label.grid(column=0, row=3)
 
-password_entry = ttk.Entry(width=22)
-password_entry.grid(column=1, row=3)
+password_entry = ttk.Entry()
+password_entry.grid(column=1, row=3, sticky="ew")
 
 # generate password button
 generate_password_button = ttk.Button(text="Generate Password",
                                       command=generate_password)
-generate_password_button.grid(column=2, row=3)
+generate_password_button.grid(column=2, row=3, sticky="ew")
 
 # add button
-add_button = ttk.Button(text="Add", width=40, command=save_login_details)
-add_button.grid(column=1, row=4, columnspan=2)
+add_button = ttk.Button(text="Add", command=save_login_details)
+add_button.grid(column=1, row=4, sticky="ew")
 
 window.mainloop()

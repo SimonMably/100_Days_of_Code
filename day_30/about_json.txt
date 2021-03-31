@@ -1,0 +1,13 @@
+JSON Files
+
+JSON = JavaScript Object Notation
+
+Originally designed for Javascript, it has been adopted by many other programming
+languages because of how simple and easy it is to use.
+It is one of the most popular ways of transfering data, especially over the internet.
+JSON is essentially made up of nest lists and dictionaries (as it looks very similar or even the same to Python dictionaries).
+
+To work with JSON data in Python, we can use the in-built JSON library. We can use this JSON library to access and write to JSON files with: 
+    - json.dump() -- Write
+    - json.read() -- Read
+    - json.update() -- Update
