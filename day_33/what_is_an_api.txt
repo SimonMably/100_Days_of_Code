@@ -1,0 +1,38 @@
+
+API = Application Programming Interface
+
+An Application Programming Interface (API) is a set of commands, functions,
+protocols and objects that programmers can use to create software or interact
+with an external system.
+
+API's act as a interface/barrier between our programs and an external system.
+Our programs can use the rules that the APIs have prescribed to make a
+request to the external system for some data. If the request has been
+structured correctly, according to the requirements that the external
+system has set out in their API, then they will respond to our programs
+appropriately and give the requested data.
+
+Restaurant Analogy:
+A customer (the program) <-> menu/waiter/waitress (the API) <-> kitchen (external system)
+- The customer (the program) looks through the the menu (API 1/2) which
+  tells the customer what they can order, the customer tells the
+  waiter/waitress (API 2/2) what they would like to order (the request),
+  the waiter/waitress takes customer order to the kitchen (the external
+  system) where the chefs make the customers food (the requested data). When
+  the food is done, the waiter/waitress takes food to the customers (the response).
+
+Sevices that use APIs:
+- Websites/apps that display the weather forecast
+  Example: Yahoo! weather (displays the current weather and a 7 day forecast of user
+                           entered location.
+
+- Websites/apps that display the current market value and other relevant data of
+  various Cryptocurrencies
+  Example: coinbase
+
+- Websites/apps that display the stats and other relevant information of famous
+  people who play sports.
+  Example: the NBA website (displays stats for basketball players)
+
+
+
