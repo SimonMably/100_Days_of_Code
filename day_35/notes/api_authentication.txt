@@ -1,0 +1,46 @@
+API Authentication and Why Do We Need to Authenticate Ourselves
+
+Some APIs provide some simple data and are free to use without any cost. Nobody is
+going to use these APIs in an any big or fancy commercialised software.
+
+Some other APIs provide valuable data (eg. weather data). This sort of data is very
+valuable because it takes a lot of time, effort and resources for people/companies
+to provide all of this data to people to use. In these cases, APIs can have 1 or,
+usually, multiple paid tiers. These API providers that charge for their APIs, do so
+because gain all the data for their APIs require workers (who work for wages) to
+collect the data with equipment (that the API provider pays/paid for) at the
+companies place of work (which costs the company money to maintain and upkeep (for
+utility bills, maintenance costs, taxes and other costs)).
+
+OpenWeatherMap for example. They have access to over 4000 weather stations across
+the globe which uses equipment to gather weather data. Then their data scientists
+take that weather data and look at satellite images and process all of the gathered
+data to figure out the weather and make predictions for the weather for each city
+in the world. All of this is quite resource intensive and requires a lot of
+employees, server/equipment maintenance and electricity costs. For all the work that
+goes into collecting all of this weather data, it would be reasonable for them to
+charge money for the data they provide.
+
+Essentially, we see a lot of APIs as a way of selling data. If someone owns a
+privileged piece of data that is constantly being updated or is actively generating,
+weather data or financial data for example, then it's reasonable that they should
+charging money or this data, especially if someone is going to rely on it in order
+to build an app or company.
+
+Luckily, most of the API providers with paid tiers also have a free tier which
+allows us to test an application. This is great for people who are learning how
+to use APIs because API providers know it only makes sense to charge people or
+companies that have a lot of users.
+
+Also, these API provider have to prevent people from abusing their free tier. They
+have to consider this because pretty much anyone can claim that they are learning.
+The way that API providers prevent people from abusing their service is through
+something called an API Key. An API Key acts as a persons/companies personal
+account number and password. This is how an API provide can track how much someone
+is using their API and authorize access and also deny access when someone reaches
+their usage limit.
+
+API providers can have different ways for people to authenticate themselves with
+them, but most will involve some sort of API Key.
+
+

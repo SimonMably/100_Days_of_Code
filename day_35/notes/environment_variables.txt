@@ -1,0 +1,25 @@
+Environment Variables
+
+What are they used for:
+There are 2 major use cases:
+- Convenience:
+    Normally, when we deploy a large application, the process is quite complicated.
+    When we've done it, we don't want to mess around with the codebase and update
+    the information stored in variables.
+
+    Instead, we can have Environment Variables that we can change. For example, if
+    we had an application that regularly sends emails to clients, our client's
+    emails may change from day to day. These emails can be stored as Environment
+    Variables so they can be changed as and when needed very easily without
+    touching the code.
+
+- Security:
+    When we develop software, we may be uploading our codebase somewhere (like
+    storing it online for people to see or storing it on a cloud service for
+    example). It's generally not a good idea to leave API keys, authentication keys
+    and other sensitive information in a codebase that other people can see it.
+
+There are some ways to store Environment Variables (eg. on a cloud service or within
+our codebase). From within our codebase, for example, we can store Environment
+Variables within .env files
+
