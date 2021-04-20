@@ -1,11 +1,14 @@
 import requests
 from twilio.rest import Client
+import os
+from dotenv import load_env
 
 
+load_env()
 owm_endpoint = "https://api.openweathermap.org/data/2.5/onecall"
-api_key = "1aded3bf923268f713cfc066ea331251"
-account_sid = "ACbddc3b6cad8cb62f86b6e048f9256940"
-auth_token = "e9e00595ba6ec9857653dcac8882057a"
+api_key = os.getenv("API_KEY")
+account_sid = os.getenv("ACCOUNT_SID")
+auth_token = os.getenv("AUTH_TOKEN")
 
 parameters = {
     "lat": 50.828423,
