@@ -1,0 +1,25 @@
+Using the requests Module
+
+Types of requests:
+- GET: requests.get()  *
+- POST: requests.post()
+- PUT: requests.put()
+- DELETE: requests.delete()
+
+* Parameters go inside the parentheses
+
+For a GET request, we make a request to an external system (through an API), and we
+receive a response in return.
+For the other types of requests, the code is similar:
+POST: A post request is where we give an external system a piece of data while not
+      being particularly interested in the response other than to see if the post
+      request was successful or not. For example, if we wanted to save a piece of data
+      in a Google Sheets document, we could use the Google Sheets API to POST the data
+      to the Google Sheet.
+
+PUT:  A put request is where we can update a piece of data in an external system.
+      For example, if we had a spreadsheet in Google Sheets with values that we
+      wanted to update, we can use a PUT request to do this.
+
+DELETE: A delete request is where we delete some data in a external system. For
+        Example, deleting an existing Tweet or Facebook post.

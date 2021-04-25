@@ -1,0 +1,13 @@
+Headers
+
+Headers contain sensitive information that is invisible to other people. API
+providers are likely to recommend using headers over regular API keys and tokens.
+
+
+
+
+
+
+
+
+
