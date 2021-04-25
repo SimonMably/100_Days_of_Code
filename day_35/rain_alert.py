@@ -6,7 +6,6 @@ from dotenv import load_dotenv
 =======
 import os
 from dotenv import load_env
->>>>>>> 175b931e6b5b764a74d79c021b0e63cc96c723ed
 
 load_dotenv()
 api_key = os.getenv("api_key")
