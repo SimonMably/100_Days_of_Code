@@ -27,3 +27,13 @@ I'll be using this repo as a way for myself to access them as, if and when I nee
  Udemy course into the main file (along with my own attemt). I intent to come 
  back to this project and have another go at attempting it to see if I can 
  complete it on my own.
+
+1. **Flight Deal Finder & Flight Club - Capstone Project for days 39 and 40**
+ I had quite a bit of difficulty with this project. Judging by some comments 
+ from other learners of this course, im not alone. One of the difficulties I had
+ was with the Sheety API. Its usage cap got used up quite quickly during my 
+ testing of my project and occasionaly couldn't get it to apply a few of the 
+ things I tried to implement. 
+ I may come back to this project in the future and retry it, especially with 
+ an alternative to the Sheety API (the Google Sheets API was mentioned in a few
+ of the courses comments)  
