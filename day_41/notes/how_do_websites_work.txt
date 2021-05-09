@@ -1,0 +1,38 @@
+How Do Websites Work
+
+What does HTML, CSS and JavaScript do exactly?
+
+
+In order to access a webpage, we need a browser (eg. Google Chrome, Safari, Firefox).
+These are pieces of software that allow us to look up the IP addresses of websites
+and be able to receive data that it can render into actual webpages and websites.
+
+The data that we receive consist mainly of 3 types of files;- HTML, CSS, JavaScript.
+
+The purpose of each file type:
+
+HTML - Responsible for the structure of a website. If a website was a house,
+       HTML would be the builder who would build the walls, stairs, put in the
+       windows, the doors, the shower, bath, toilet and sinks (building the
+       general structure of the house).
+       HTML is the same for websites. HTML can be used to add an image, a button,
+       or textbox, for example, or anything else we may need inside a website.
+
+CSS -  Responsible for the styling of a website. Going with the "website is a house"
+       theme, CSS would be the painters and decorators that would paint the walls
+       and adding stylistic flourishes, and generally making the place look the
+       way we want it to.
+       CSS specifies how a website should look. For example, a button (which was
+       added by the HTML) will need CSS to give it a colour and a font.
+
+JavaScript - Responsible for the behaviour and functionality. If a website
+             was a house, JavaScript would be the tradesmen/women that got things
+             working, eg. an electrician doing up the electrical wiring so that
+             lightbulbs, plug sockets and such worked properly or a plumber doing
+             the plumbing so that the toilets flushed and taps/faucets for the
+             sinks and shower/bath worked.
+             JavaScript allows a website to do things and have behaviour.
+
+HTML puts things onto a webpage, CSS makes those things look a certain way and
+puts them in a certain place on the page, and JavaScript gives everything a job
+and makes them behave a certain way.

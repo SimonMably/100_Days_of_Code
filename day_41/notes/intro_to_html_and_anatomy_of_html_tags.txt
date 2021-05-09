@@ -1,0 +1,54 @@
+Introduction to HTML
+
+HTML is the foundation to all websites. Websites cannot be made with just CSS or
+just JavaScript, but they can be made with just HTML.
+
+Website made with just HTML will not look great by modern standards. They look
+like they came from the 1990's, but HTML does enable a website to display text
+or various elements such as images, text, forms and tables depending on how the
+HTML file is coded.
+
+HTML = HyperText Markup Language
+
+HTML is a Markup language (similar to XML (Extensible Markup Language) and
+GML (Generalised Markup Language))
+
+Markup Languages share a common history. They are based on the markup that used
+to be put into manuscripts where editors would mark up the manuscripts and either
+changes to the author or specify structure and layout to the publishers.
+
+
+The Anatomy of an HTML Tag (or element)
+
+<h1>Hello World</h1>
+
+<h1></h1> is a headings tag (the largest).
+
+<h1> is the opening/start tag. </h1> is the closing/end tag. The text in between
+the start and end tags is the content that we want the tag (or structure) to be
+applied to. (THIS TYPE OF TAG REQUIRES A CLOSING TAG)
+
+Another type of tag is the "self-closing tag". For example, <br> ((line) break tag).
+A self-closing tag doesn't need a closing tag (eg. </br>).
+Another example of a self-closing tag is the <hr> tag (horizontal rule).
+
+Modifying Tags/Elements with Attributes
+
+Inside tags, the HTML element comes first, then the HTML Attribute. For example:
+<hr size="3">
+
+
+
+
+
+Example HTML code:
+
+<center>
+<hr size="3" noshade>
+<h1>The Adventures of<br>Sherlock Holmes</h1>
+<br>
+<h3>by</h3>
+<br>
+<h2>Arthur Conan Doyle</h2>
+<hr size="3" noshade>
+</center>

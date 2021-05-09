@@ -1,0 +1,74 @@
+The internet is essentially a long piece of wire that connects a lot of
+different computers from around the world to each other. There can be, for
+example, one computer in Seattle, US and another computer in London, England.
+These two computers can talk to each other and transfer data though this long
+wire.
+
+Some of these computers that are attached to internet have a very
+special/particular job. They have to be online 24 hours a day, 7 days a week,
+ready to serve people the data and files that they are requesting when we access
+ websites. The computers that are doing this job are called a "Server" (or
+"Servers" if more than 1).
+Any computer that accesses the internet is known as a "Client".
+
+A "Web Server" can be thought of a library that's open 24/7 and we can access
+it at any time we want or need and request to see any website or page that is
+available. This "Web Server" (or library) will be able to serve us (the "Client")
+with all the files and data that we would need to be able to view whatever
+website that we requested.
+
+If there is a library that is big enough to house all these websites, then it's
+going to be difficult to quickly locate the one website that we requested out of
+this giant library.
+
+
+How This is Solved on the internet:
+When we want to go to a particular website, we type the web address of that
+website into a web browser on a computer (the "Client"), and then, behind the
+scenes, our web browser will send a message to our Internet Service Provider (ISP)
+(the company that we pay to let us access the internet).
+
+The message that the browser is sending the ISP is:- "I want to see {website name}".
+The ISP will then relay that message to something called a "DNS Server" (Domain
+Names Systems Server"). A DNS Server is a like a huge version of a phone address
+book but for websites.
+
+When a DNS Server gets a request for a website, the DNS Server will look up, in
+its database, as to what is the exact IP address of that website we're trying to
+access. Every single computer that is connected to the internet has an IP address.
+
+A IP address is like a postal address for a computer.
+When people need to send and receive data or files on the internet, each computer
+can be located by their unique IP address.
+
+When the DNS Server finds the IP address of the website we want, it sends it
+back via our ISP to our web browser. A this point, our browser will know the
+exact address of the website we want to access.
+
+The next thing that happens is that our browser sends a direct request to that
+address through our ISP. The ISP will deliver this message via what is called
+the "Internet Backbone". The "Internet Backbone" is the literal backbone of the
+internet. See https://www.submarinecablemap.com/#/ to view all the underwater
+cables that power the internet. The internet is made up of huge sprawling masses
+of wires that connect the worlds internet users.
+
+To clarify, we put a web address into our browser, the browser sends a request
+this web address via our Internet Service Provider to a DNS Server, which responds
+by sending back the exact IP address of the server that contains the website we
+want via our ISP to our browser. Our browser then sends a direct request via our
+ISP through to the Internet Backbone all the way to the Server that houses the
+website we want to access. The Server then sends the files and data related to
+the website we want to view back to us through the Internet Backbone via the ISP.
+
+Process of how we gain access to a website:
+
+Client --> ISP --> DNS Server -->
+                                 |
+Client <-- ISP <-- DNS Server <--
+   |
+    --> ISP --> Internet Backbone --> IP address of the Server containing the
+                                      website we want to view
+                                            |
+Client <-- ISP <-- Internet Backbone <-------
+
+The entire process takes place within a few milliseconds.

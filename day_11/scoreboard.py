@@ -1,5 +1,6 @@
 from card import Card
 
+
 class Scoreboard:
     """Class that calculates the scores for the player and dealer."""
 
@@ -16,14 +17,14 @@ class Scoreboard:
             return 0
 
         if 11 in self.cards and sum(self.cards) > 21:
-            self.cards.remove(11)
+            self.cards.remove_card(11)
             self.cards.append(1)
 
     def compare(self):
         """Compares players and dealers scores. Checks if scores are over the
         score limit, and for wins, loses and draws by score."""
         if self.player_score > 21:
-            return "Youn went over 21. You lose."
+            return "You went over 21. You lose."
 
         
 
