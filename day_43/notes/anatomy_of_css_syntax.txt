@@ -1,0 +1,87 @@
+The Anatomy of CSS Syntax
+
+
+CSS Syntax is the grammar of the CSS language.
+
+What CSS syntax looks like:
+selector {property: value;}
+
+The curly braces and the semi-colon are expected as they are apart of the CSS syntax.
+
+selector = what we want to modify, eg. the paragraph (<p>) tag, the image (<img>)
+           tag.
+
+property = what selector property we want to modify, eg. the selectors background
+           colour, the selectors text colour, the selectors position.
+
+value = the how we want tot modify the selector. eg. make the selector blue or red.
+        What value will we give the selector to change it.
+
+ Example CSS:
+ h1{color: red;}
+
+ h1 = selector
+ color = property
+ red = value
+
+ We can have multiple modifications to the selector. eg.
+ selector {property: value; property: value; property: value;}
+
+ Having multiple modifications to each selector means that it will run out of
+ room on the line it's on, so we can instead have each modification on its own line.
+ eg.
+selector {
+  color: red;
+  font-size: 15px;
+ }
+ This is considered a best practice. Another best practice is to list the
+ modifications alphabetically (by property) so each modification is easier to
+ find.
+
+Course Challenge: Apply external CSS to Bacon Fansite.
+
+For the properties we can change, see https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
+for reference.
+
+Use tag selectors to change the properties of all instances of a particular tag.
+eg.
+h1 {
+color: red;
+font-size: 30px;
+}
+
+Use class selectors to change the properties of a single/particular tag. Use the
+class property inside of the tag first, then change the property in CSS. Can have
+as many instances of the same class (name) as we want. Use to style a group
+of items.
+eg.
+1. in HTML file:
+<img class="bacon" src="bacon.png" alt="bacon-img">
+
+2. Using class selector to change the property:
+.bacon {
+  background-color: green;
+}
+
+Can also use id selectors to change the properties of a single/particular tag. Use the
+id property inside of the tag first, then change the property in CSS. Can only
+have one instance of an id selector (eg. only 1 id="heading"). Use to style a
+specific element (we can have multiple ids on the same web page, we just can't
+use each one more than once on the same page).
+eg.
+1. in HTML file:
+<h1 id="heading">
+
+2. Using class selector to change the property:
+#heading {
+  background-color: blue;
+}
+
+
+pseudo-classes:
+Use pseudo-classes to change state of an element. pseudo-classes will have a
+colon in the front of them.
+eg.
+img:hover {
+  background-color: blue:
+}

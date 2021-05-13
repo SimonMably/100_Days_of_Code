@@ -1,0 +1,6 @@
+Styling a web page or an entire website with just HTML can get rather wordy,
+prone to error and difficult to debug. All of this combined can make one big mess.
+
+Cascading Style Sheets (CSS) can be used to help style HTML (along with any other
+mark-up language). The only purpose of CSS is to style mark-up languages, which
+means it can't do anything on its own.
