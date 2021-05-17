@@ -1,0 +1,57 @@
+Float & Clear Positioning
+
+Float
+
+The float property allows an element to 'float' at a defined position while any
+other elements wrap around it.
+Apparently, overused and abused. Should only be used to wrap text around another
+element, not for positioning.
+
+
+Clear
+
+The clear property will not allow an element to wrap around another element on
+defined side.
+
+
+Example HTML & CSS code:
+
+<div class="skills">
+  <h2>My Skills.</h2>
+  <div class="skill-row">
+    <img class="computer-img" src="images/computer.png" alt="computer-img">
+    <h3>Software Development</h3>
+    <p class="skills-description">
+      <li>Python: beginner - intermediate</li>
+      <li>HTML & CSS: beginner</li>
+    </p>
+  </div>
+  <div class="skill-row">
+    <img class="chillies-img" src="images/chillies.png" alt="chillies-img">
+    <h3>Other Skills</h3>
+    <p class="other-skills">
+      <li>Ability to work in a team and on my own</li>
+      <li>Use of computer software such as Microsoft products (Excel, Word) or alternative software</li>
+    </p>
+  </div>
+</div>
+
+.computer-img {
+  float: left;
+  margin-right: 30px;
+  width: 25%;
+}
+
+.chillies-img {
+  float: right;
+  margin-left: 30px;
+  width: 25%;
+}
+
+.skills-description {
+  clear: left;
+}
+
+.other-skills {
+  clear: right;
+}

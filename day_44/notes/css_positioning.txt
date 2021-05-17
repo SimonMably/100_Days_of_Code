@@ -1,0 +1,91 @@
+CSS Positioning
+
+Even without CSS, HTML elements already have pre-defined rules for how they should
+be displayed on web pages.
+We need to understand how things get positioned by default before we can change
+them without getting confused and getting stuck.
+
+Positioning rules:
+1. Content is everything.
+   Inline elements only take up as much width and as much height as the content.
+   For example, if we have a <span> that contains a short word, that <span> will
+   have a short width, but if we have a <span> that contains a long word, that
+   <span> will have a long width.
+   With block elements, even though they take up the entire width of the page,
+   their height is still determined by the content. For example, if we have a
+   large font far a <h1> heading or a <p> paragraph, then that box model is going
+   going to take up a lot more height than if it was a smaller font.
+   This means that the content is the first thing that determines how large
+   things get displayed and what the height and width will be.
+   All of this is done even without CSS.
+
+2. Order comes from code:
+   The order of the elements on screen comes from our HTML code. For example,
+   if we have a <h1> heading, 3 <p> paragraph elements and an <img> written in
+   that order in the HTML file, then they will get rendered on the web page in
+   that order.
+   If we change the order of these elements in the HTML file, then the order in
+   which they get rendered on the web page will change accordingly.
+
+3. Children sit on parents:
+   This means that, if we have elements inside another element, then the elements
+   inside will appear in front of the element the containing element. For example,
+   if we have a <h1> heading and 2 <p> paragraph elements inside a <div> element,
+   the <h1> heading and <p> paragraphs will appear in front (or sit on top of)
+   the <div>. We could take it a bit further and put a <span> element inside the
+   <h1> heading, which will mean the <span> will also be sitting on top of the
+   <h1> heading element (<span sitting on top of a <h1>, the <h1> sitting on top
+   of the <div>).
+
+
+We can also set a CSS property, which is the position property, in order to
+position elements on the screen the way we want it to instead of just going along
+with the default layout. In most cases, we will want to make changes to the
+default layout.
+
+Some ways in which we can change this position property:
+1. Static - All HTML elements have a static position by default. This means that
+            elements with a static position will go along with the HTML rules
+            and keep to the default HTML flow. This is what we will see when we
+            have HTML without any CSS or don't change this position property
+            at all.
+
+2. Relative - This property allows us to position an element that we select
+              relative to how it would have been positioned had it been static.
+              For example, if we use the relative position on an element, and we
+              can specify the direction and how for to push the element relative
+              to its default (or previous) position.
+              How the code would look (example):
+              img {
+                position: relative;
+                left: 30px;
+              }
+              This means that, in this example, the image will be pushed 30 pixels
+              from the left of its static position (in other words, it gets pushed
+              30 pixels to the right).
+              The relative position property is used in conjunction with a
+              'coordinates' property: top, bottom, left and right. We can set
+              values for them in order to determine how we want them to move an
+              element.
+              Giving an element a relative position will not effect anything
+              else on screen (the element will just overlap other elements).
+              In a way, giving an element a relative position can be thought of
+              as giving an element a margin, relative to its original position.
+
+3. Absolute - This property allows us to position a nested element relative to
+              its parent element (or adding a margin to its parent element). The
+              parent element could be the body of the web page or an element like
+              a <div>.
+              Absolute positioning does affect the flow of HTML. When absolute
+              positioning is used on an element, this element is taken out of the
+              flow of the document and is no longer considered part of the natural
+              flow of the document. Using absolute positioning to move an element
+              will cause elements that were underneath it (maybe around it) to
+              shift up and take its place. But, the element with the absolute
+              position can be placed anywhere relative to its parent element.
+
+4. Fixed - This property allows us to position an element at a defined place on
+           screen and that element will stay in that position on screen and no
+           amount of scrolling will make it move.
+           This property is great for keeping certain elements in a fixed location.
+           This property is ideal for elements like nav bars or a side bar.

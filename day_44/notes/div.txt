@@ -1,0 +1,5 @@
+div is a HTML element that can only be used with CSS.
+
+A div is a content division element and they allow us to split up and/or divide
+our content into separate containers or boxes so we can effect the layout of each 
+separately.

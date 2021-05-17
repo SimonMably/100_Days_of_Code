@@ -1,0 +1,14 @@
+CSS Sizing
+
+There are 3 types of sizing values for fonts; pixels (px), as a percentage (%),
+or em (or rem).
+
+em is the phonetic pronunciation of the letter 'm'. In older days, in computer
+text, each symbol (letters, numbers, etc) had the spacing of a capital M. This is
+what em meant, although it doesn't happen currently.
+
+rem is short for 'root em'.It is one of the font-relative measurement units
+commonly used in css.
+
+All 3 measurements can be converted to each other.
+1em (or 1rem) = 16px

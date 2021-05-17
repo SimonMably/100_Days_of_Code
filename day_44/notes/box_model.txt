@@ -1,0 +1,46 @@
+Each HTML element on screen is treated as a box by CSS. By styling each of these
+boxes, by changing their height, width, margin, padding, etc, that's how we
+determine how all these elements are laid out and appear onscreen.
+
+For example, if we specified a CSS rule that targeted all of the images on a
+website that said to have a width to 100%, all that it's going to do is change
+it's width of that box to 100%, and in the process, scale up the image(s).
+This concept is known as the box model
+
+
+If we have a div that we've given a background colour and a height and width of
+300px. If the height of this div to 600px, then it will expand vertically,
+pushing down any other divs or content that not inside this particular container.
+The same will happen if this div is expanded horizontally, pushing everything on
+its right further.
+
+When it comes to values of size, these values can be set as pixels or as a
+percentage. By percentage, it means the percentage of screen size. For example,
+a width of 100% means an elements width will take up the entirety of the width
+(and not the height) of the view port. View port = the screen we are using to
+view whichever website we are on. The view port could be; laptop/pc screen,
+mobile, or tablet screen, for example.
+
+In addition to the width and height of an element, we can specify whether it
+should have a border or not (along with its border width). The width of the
+border increase the size of the element.
+We can also specify a border width for specific sides of an element. we can do
+that with {border-top: 0px} (for the top edge of the element).
+Alternatively, we can use the "circle" shorthand, {border-width: 0px 10px 20px 30px;},
+this will go round the element, in a circle (clock-wise), and apply each value
+to a side of the element. In the above example, an element will have a border
+that has a width of 0 pixels at the top, 10 pixels on the right side, 20 pixels 
+on the bottom and 30 pixels on the left side.
+
+If we had some content (eg. some text) in a box (or a div or other element),
+even if this box/div had no height or width, it will have the height and width
+in order to fit This content. This means that the content will make the element
+big enough for the content to fit inside with no space between the content ant
+the border of the element. We can counter this lack of space by specifying some
+padding. eg. {padding: 20px;}, this will give 20 pixels of space on all 4 sides
+of the element between the content and the edge of the element. Like giving an
+element a border width, padding will increase the size of an element.
+
+We can also give an element/box a margin. The margin is a buffer zone (like giving
+an element padding, but on its outside edges instead of its inside edges).
+Applying margins to elements will give some space in between elements

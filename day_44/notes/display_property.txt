@@ -1,0 +1,38 @@
+The 'display' property has 4 different values; block, inline, inline-block, none.
+
+block:
+  Block elements are elements that take up the entire width of the web pages screen,
+  essentially blocking other elements from being displayed directly next to them.
+
+  Elements that have the 'block' display property are so by default.
+  Examples of block elements; paragraph tags (<p>), heading/header tags (<h1>, <h2>, etc),
+  divisions (<div>), lists and list items (<ol>, <ul>, <li>), and forms (<form>).
+
+  The span (<span>) element can be used to format different parts of a block element
+  or its contents without splitting up the block element. Span elements (like div
+  elements) don't do very much unless they're used in conjunction with CSS.
+
+  Block display elements can be turned into inline display elements (with CSS).
+
+inline:
+  Inline display elements, unlike block elements, only take up as much space as
+  that they need to, in height as well as width.
+  Some properties of inline display elements cannot be changed, their width, for
+  example.
+  Examples of inline elements; span tag (<span>), image tag (<img>), anchor tags (<a>).
+
+  Inline display elements can be turned into block display elements (with CSS).
+
+inline-block:
+  Inline-block display elements are a combination of inline and block display
+  elements.
+
+none:
+  Using 'display: none' on an element removes that element from the web page.
+  The code for the element will still be there, but in terms of how it is displayed
+  on the web page, it will have disappeared. The surrounding elements, if Inline
+  display elements, will take the place of those that have a display property of
+  'none'.
+  Similarly, the 'visibility' property can hide (with the value of 'hidden') a
+  an element from view, but it will remain in its position on the web page, it
+  just looks as if there is a gap, the element just can't be seen.

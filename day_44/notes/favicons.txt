@@ -1,0 +1,6 @@
+What are favicons
+
+Favicon = Favourite icon
+
+Favicons are icons that appear on browser tabs. Each website we visit has there
+own.

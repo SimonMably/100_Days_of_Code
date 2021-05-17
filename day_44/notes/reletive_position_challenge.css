@@ -1,0 +1,54 @@
+.blue {
+  background-color: blue;
+  height: 100px;
+  width: 100px;
+  position: relative;
+  bottom: 100px;
+}
+
+.yellow {
+  background-color: yellow;
+  height: 100px;
+  width: 100px;
+  position: relative;
+  bottom: 200px;
+  left: 100px;
+}
+
+.red {
+  background-color: red;
+  height: 100px;
+  width: 100px;
+  position: relative;
+  left: 200px;
+}
+
+/* Course Solution:
+.red {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  position: relative;
+  display: inline-block;
+}
+
+.blue {
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+  display: inline-block;
+  position: relative;
+  right:100px;
+}
+
+.yellow {
+  height: 100px;
+  width: 100px;
+  background-color: yellow;
+  display: inline-block;
+  position: relative;
+  right: 100px;
+
+
+
+*/
