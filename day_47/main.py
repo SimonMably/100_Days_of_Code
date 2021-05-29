@@ -33,20 +33,12 @@ RECIPIENT = os.getenv("RECIPIENT")
 if no_currency_price <= 31.0:
     message = f"{product_title} is now {product_price}\n{URL}"
 
-    with smtplib.SMTP("smtp.mail.yahoo.com", port=465) as connection:
+    with smtplib.SMTP("smtp.mail.yahoo.com", 465) as connection:
+        # connection.ehlo()
         connection.starttls()
+        # connection.ehlo()
         connection.login(user=EMAIL, password=PASSWORD)
         connection.sendmail(from_addr=EMAIL, to_addrs=RECIPIENT,
                             msg=f"Subject:Amazon Price Alert - {product_title}\n\n"
                                 f"{message}"
                             )
-
-
-
-
-
-
-
-
-
-
