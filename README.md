@@ -48,3 +48,13 @@ I'll be using this repo as a way for myself to access them as, if and when I nee
     (even though I know they are correct, I checked multiple times) to smtplib being 
     slow. 
     I'm going to come back to this in a few days to see if I can get it working properly.
+
+**Automated Job Applications on Linked - Day 49**
+
+    Yet another project I'm having trouble with. This time it had to do with LinkedIn
+    "preventing unusual sign in attempts" (because of me using a bot), differents sign
+    in pages being loaded and such. 
+    I tried using Indeed as an alternative for this project and I was getting more or 
+    less the same trouble (I left the code for this in the project).
+    I unfortunately ended up getting to fustrated with the project and decided to move 
+    on for the moment and come back to it at a later date.
