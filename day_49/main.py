@@ -1,4 +1,5 @@
 from selenium import webdriver
+from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.keys import Keys
 import time
 import os
@@ -6,7 +7,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 EMAIL = os.getenv("EMAIL")
-PASSWORD = os.getenv("PASSWORD")
+INDEED_PASSWORD = os.getenv("INDEED_PASSWORD")
+LINKEDIN_PASSWORD = os.getenv("LINKEDIN_PASSWORD")
 LOCATION = os.getenv("LOCATION")
 
 chrome_driver_path = "C:\Development\chromedriver.exe"
@@ -115,12 +117,11 @@ def get_jobs_on_linkedin():
     driver.quit()
 
 
-
 which_jobsite = input("Where would you like to search? Indeed or LinkedIn: ").title()
 if which_jobsite == "indeed":
     go_to_indeed()
     get_jobs_on_indeed()
-elif which_jobsite == "LinkedIn" or which_jobsite == "linkedin" or which_jobsite = "linkedIn":
+elif which_jobsite == "LinkedIn" or which_jobsite == "linkedin" or which_jobsite == "linkedIn":
     go_to_linkedin()
     get_jobs_on_linkedin()
 
