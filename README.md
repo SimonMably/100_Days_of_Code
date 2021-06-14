@@ -1,6 +1,6 @@
 # #100 Days of Code
 
-Im taking part in '100 Days of Code - The Complete Python Pro Bootcamp for 2021'
+I'm taking part in '100 Days of Code - The Complete Python Pro Bootcamp for 2021'
 course from Udemy.
 
 Since my goal is to master Python, I chose to take this course in the hope it would provide more structure and better guidance than I was getting while "self-learning".
@@ -58,3 +58,13 @@ I'll be using this repo as a way for myself to access them as, if and when I nee
     less the same trouble (I left the code for this in the project).
     I unfortunately ended up getting to fustrated with the project and decided to move 
     on for the moment and come back to it at a later date.
+
+**Automated Instagram Follower Bot**
+
+    The Instagram follower bot that I made does work, but there seems to be a slight 
+    issue when it comes to the pressing of 'follow' buttons (in 'follow() method. 
+    All the 'follow' buttons do get pressed, but after a certain amount of these 
+    buttons being pressed, whatever procedure that activates the following of these 
+    accounts stops working. The bot does continue clicking thse buttons though, the 
+    buttons just doesn't activate. From some comments on the course, it seems to have 
+    something to do with some sort of anti-bot mechanism.
