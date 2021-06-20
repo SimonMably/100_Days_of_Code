@@ -1,0 +1,24 @@
+About the Command line/Terminal
+
+The Command Line (or Terminal) is a way typing in commands one line at a time in order to control our computer. The
+command Line is also known as the Shell.
+
+Pistachio Nut Analogy
+If an Operating System is a pistachio nut, the actual nut is the Kernel. In computing, the Kernel refers to the actual
+program that interfaces with the hardware, so it's the core of the Operating System.
+The Shell refers to the User Interface for user to be able to interact with the Kernel, and in turn the hardware of a
+computer.
+
+There are 2 variants to the shell:
+    - GUI Shells - An example of a GUI Shell is 'File Explorer' (on Windows) which gives a graphical
+      way of accessing and finding directories and files.
+    - Command Line Interface - A text based Shell of the above.
+
+
+Why Use the Command Line?
+At the end of the day, it all boils down to 'greater control'. I our journey to become a better developer, we will need
+to understand and exert more power over our tools that is computer hardware. But on a day to day basis, we will find,
+if we are a regular Command Line user, that it's actually easier and faster to do a lot of common things.
+
+
+

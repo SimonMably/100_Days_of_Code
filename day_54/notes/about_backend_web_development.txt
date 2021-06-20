@@ -1,0 +1,41 @@
+About Backend Web Development With Python
+
+Python isn't the only programming language that can be used on the backend. Other languages for the backend can include:
+JavaScript, Java, C#, PHP and Ruby. Each language that can be used in backend web development has their own array of
+Frameworks that can be used on/help with the backend (and in some cases, like JavaScript, have Frameworks for the
+frontend as well).
+
+Web Frameworks available for Python include: Flask, Django, Bottle, CherryPy, Pyramid, TurboGears, Web2Py, Grok. Hug
+and Falcon. Django and Flask are considered the most popular.
+Flask is better suited for beginners and small projects while Django is suited for much  more larger commercial projects.
+
+------------------------------------------------------------------------------------------------------------------------
+
+What Exactly is the Backend?
+
+There are 3 components that we need to understand when it comes to the backend: the Client, the Server and the Database.
+These 3 components together will determine how a backend will work.
+
+Client - A user accessing the internet/web from a browser. The clientside that faces the user.
+
+Server - A powerful computer that is on 24/7 and is hooked up to the internet. Always ready to receive requests over
+         the internet.
+
+Database - Similar to a super spreadsheet that stores all of the information related to the website that it's apart of.
+
+If someone wanted to go to a website, they will use a web browser (the Client) to type in the web address of the website
+that want to in the url bar and press ENTER. The browser (Client) will send this web address across the internet to
+a Server as a request. This Server has to respond by sending back the HTML, CSS and JavaScript files that it has for
+that particular website. Once the browser (Client) has those files, the browser (Client) can use use those files to
+render the requested webpage.
+If a website has a lot of user data or different types of data that can be requested by a user, then that website will
+usually have a Database. When a user requests a webpage that has user information from a Server, the Server will
+retrieve the relevant user information from the database and bundle it along with the HTML, CSS and JavaScript files in
+the response back to the Client.
+
+Restaurant Analogy
+In a restaurant, there is the front-of-house where all of the customers sit and eat, there is the kitchen where all the
+food is prepared and cooked, and there is the larder/fridges/panty where all of the food is stored.
+The front-of-house is the Client-side, the kitchen is the Server and the larder/fridges/pantry is the Database.
+
+

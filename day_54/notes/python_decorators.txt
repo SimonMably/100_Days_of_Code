@@ -1,0 +1,8 @@
+Python Decorators
+
+Imagine having a bunch of functions in class or a module and wanted to add some functionality to each of these functions.
+We can do this with Decorator functions.
+Essentially, Decorator functions are functions that give additional functionality to existing functions.
+
+
+
