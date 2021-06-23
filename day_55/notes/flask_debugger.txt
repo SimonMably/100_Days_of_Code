@@ -1,0 +1,41 @@
+We can turn on the Flask debugger by setting the app.run() argument to True (app.run() is held within the
+'if __name__ == "__main__":' block of code
+
+eg.
+if __name__ == "__main__":
+    app.run(debug=True)
+
+If we set Flasks debugger on, Flask will automatically restart the server every time it detect any saved changes in the
+program. As programmers, this is quite useful because it is a lot faster and useful than having to restart the whole
+server manually every time we make a change.
+
+It is also helpful when debugging any problems. If we  do get any errors, we can simply click on the black square next
+to the error message and enter the 'debugger pin code' (this can be found in the terminal window when Flask is running
+the server) in to the prompt that shows to access the debugger. Entering this debugger pin code is helpful because,
+if we are debugging a website while it's live, no one else can gain access to the code and mess around.
+When we have entered the debugger pin code into the prompt, a console will appear on the debug screen and we can figure
+out the problem.
+
+In regards to URL path (what the Decorators are for), we can add text some text BEFORE and AFTER the variable (the bit
+of code in the <angle> bracket (inside the Decorator argument).
+
+In regards to the variable, Flask accepts the variable as a string by default. But we can use a converter to specify the
+type of variable (which actually is received by a function as a keyword argument).
+
+Converter types:
+    String  - (Default) Accepts any text without a slash
+    Integer - Accepts positive integers
+    Float   - Accepts positive floating point values
+    Path    - Like String but also accepts slashes
+    UIID    - accepts UUID strings
+
+Examples:
+@app.route('/post/<int:post_id>')
+def show_post(post_id):
+    # show the post with the given id, the id is an integer
+    return 'Post %d' % post_id
+
+@app.route('/path/<path:subpath>')
+def show_subpath(subpath):
+    # show the subpath after /path/
+    return 'Subpath %s' % escape(subpath)
