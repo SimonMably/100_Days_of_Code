@@ -1,0 +1,4 @@
+When creating a Flask application, we need to make 2 sub-directories inside the main directory. They need to be named
+"static" and "templates". All HTML files need to be stored in the "templates" folder and CSS files, images, videos and
+any other static files need to be stored in the "static" folder. Remember, the file path is relative to that folder.
+
