@@ -1,0 +1,30 @@
+Jinja documentation: https://jinja.palletsprojects.com/en/3.0.x/
+
+Jinja is a templating language for Python that has a similar syntax to Python.
+Jinja allows us to use this syntax (eg, {% code %} and {{ code }}) in order to specify,
+inside the HTML file, which parts should be evaluated as Python code.
+
+Examples:
+In Python file:
+
+@app.route
+def home():
+    random_number = random.randint(1, 10)
+    return render_template("index.html", num=random_number)
+
+
+In HTML file:
+
+<body>
+    <h1>Hello World!</h1>
+    <h2>{{ 5 * 6 }}</h2>
+    <h3>Random Number: {{ num }}</h3>
+</body>
+
+In this example, we use random.randint() to get a random number and store it in a
+variable, we pass this variable in 'render_template()' as the 'num' keyword argument
+(render_template() allows us to use **kwargs). 'num' gets used in the HTML file (in
+the <h3> tag and this will be displayed on the webpage the browser as a random number.
+Also, the HTML files <h2> tag contains {{ 5 * 6 }}. This will be seen as an equation
+and will display the answer in the webpage in the browser (without the curly braces,
+'5 * 6' will be displayed on the webpage).

@@ -1,0 +1,18 @@
+URL building is a way that allows us to direct the user to a specific page on a website or web app.
+To build a URL to a specific function, we can use the 'use_for()' function. use_for() takes the name of the function
+that routes to a specific webpage as the first argument and then can take **kwargs after.
+Documentation for URL building can be found at: https://flask.palletsprojects.com/en/2.0.x/quickstart/#url-building
+
+We can use Jinja to accomplish this on the HTML side of things.
+Example:
+<a href="{{ url_for('get_blog', num=3) }}">Go to blog</a>
+                       ^          ^
+                       |          |
+      parameter of function       **kwarg
+      associated with webpage
+
+The above example will generate a hyperlink to the webpage associated with the 'get_blog()' function. The 'num=3' **kwarg
+will need to be caught in the 'app.route()' decorator as 'app.route("/blog/<num>")' and will also need to be used as
+the input of the function itself.
+
+The URL of this particular link is: http://127.0.0.1:5000/blog/3
