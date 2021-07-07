@@ -1,0 +1,32 @@
+Wireframes are a low fidelity representation of the design of a website or app. 
+Creating a wireframe is meant to be done with using a pencil and paper (website 
+variants are available) and is supposed to be quick and simple.
+
+The idea behind creating a wireframe is to settle on the design of a website or
+how the website should before creating the actual website itself. 
+
+
+The opposite of a wireframe is called a "Mock-up". A Mock-up is a high-fidelity 
+representation of the desig of a website or app. Mock-ups are like we've gone 
+to the future, taken a screenshot of the website/app while it's in action and 
+brought that screenshot back to the present to show people what it looks like. 
+
+One the good things about Mock-ups is that what you see in the Mock-up is what
+you get in the final website/app.
+
+Steps to take to desig in a website/app:
+1. Choose design patterns (eg. a carousel design pattern or a slideshow)
+   Look at www.ui-patterns.com for different types and examples of design 
+   patterns. 
+
+2. A simple sketched Wireframe.
+   For planning the layout and seeing where everything is going to be.
+
+3. Create a Mock-up (optional).
+   Mock-ups can be made with software like PhotoShop or Illustrator 
+
+4. Create a prototype (optional, to go the extra mile).
+   An animated version of a website/app.
+
+
+A good place to get insperation on all these steps is to check out www.dribbble.com

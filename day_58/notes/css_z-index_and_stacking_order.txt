@@ -1,0 +1,25 @@
+Z-Index
+
+Each element on screen has an x-position and a y-position, so we can move the
+element upwards, downward and left and right. Elements also have a z-position
+(or a z-index). The z-position has to do with getting closer to the screen or
+getting further away from the screen (or being in front of something or behind).
+
+So, if we want to make element 1 to go behind element 2, we have to set the
+z-position of element 1 to be lower than the z-position of element 2 (or higher
+if we want element 1 in front of element 2).
+
+Each elements default z-position is 0.
+
+For example, if we have a red div, a yellow div and a blue div, they have the
+default z-position of 0, they would appear in a straight vertical line. But, if
+we gave the red dive the z-position of 1, the red and yellow divs would be in
+the same place in terms of x and y positions, but because of the red divs
+z-position, it would look like it is place in front of the yellow div and the
+blue div would still be underneath them. This only works if the position property
+of these divs are set to the default static.
+
+For reference:
+- The Stacking Order Flowchart pdf
+- https://www.codeply.com/p/0fYVdrVmZM
+- https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/Adding_z-index

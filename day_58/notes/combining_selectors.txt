@@ -1,0 +1,79 @@
+Combining Selectors
+- Combining CSS selectors in a stylesheet and applying styles for these
+selectors.
+
+2 methods:
+Multiple Selectors
+- Grouping multiple selectors together if they have the same styles. Selectors
+  are separated with a comma (and an optional space).
+
+selector1, selector2 {
+
+}
+
+eg.
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Montserrat";
+    font-weight: 900;
+}
+
+h1, p {
+    color: red;
+}
+
+
+Hierarchical Selectors
+- Targets a selector that is contained within another selector (a <h1> contained
+  within a <div>, for example). To use properly, we need to know how is
+  structured. Selectors are separated by a space (which is crucial). Should be
+  used to style specific elements. The hierarchy of selectors should be read
+  from right to left (the selector on the right is the 'child' and the selector
+  on the left is the 'parent'. This only works if a selector is actually a
+  'child' of the 'parent').
+
+selector1 selector2 {
+
+}
+
+eg.
+The element with the class .container-fluid is contained within the element
+with the id of #title.
+#title .container-fluid {
+    padding-top: 3%;
+    text-align: left;
+}
+
+div #title {
+    color: red;
+    text-align: center;
+}
+
+
+Combined Selectors
+- Targets specific elements (eg. a <h1> with an id of #title). As opposed to
+  hierarchal selectors, combined selectors are read from left to right. Nothing
+  should separate them. Can only be used on compatible selectors, eg, if a <div>
+  has a class called 'container-fluid'. Cannot work if selectors are 'child' or
+  'parent' (Hierarchical Selectors will be needed for this instance). All Selectors
+  must be within the same HTML element.
+
+A HTML element combined with a class:
+selector1.selector2 {
+
+}
+
+A HTML element combined with an id:
+selector1#selector2 {
+
+}
+
+eg.
+div.containerfluid {
+    padding: 3% 5%;
+}
+
+h1#title {
+    font-family: "Montserrat";
+    font-weight: 900;
+    text-align: center;
+}

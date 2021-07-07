@@ -1,0 +1,31 @@
+/* Changes colour of h1 text only if printed through a printer, doesn't
+   effect what shows on screen*/
+@media print {
+    h1 {
+        color: red;
+    }
+}
+
+/* Only changes h1 text colour to red if the device viewing the website is
+   has a screen width of 900 pixels or less. Also, changes the size of the text
+   from the original defined 30 pixels. */
+h2 {
+    font-size: 30px;
+}
+
+@media (max-width: 900px) {
+    h2 {
+        color: red;
+        font-size: 60px;
+    }
+}
+
+/* Using more than one parameter in the Media Query */
+
+/* This bit of CSS will anly be applied if viewport (a devices screen) has a
+   width between 900 pixels and 1000 pixels. */
+@media (min-width: 900px) and (max-width: 100px) {
+    h3 {
+        font-size: 60px;
+    }
+}

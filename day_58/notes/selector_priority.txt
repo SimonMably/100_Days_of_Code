@@ -1,0 +1,52 @@
+Selector Priority
+
+If change the same property twice for a particular element, the first property
+change would be overwritten by the second property change.
+
+For example:
+<h1 id="heading" class="title">Hello World</h1>
+
+h1 {
+    color: red;
+    color: green;
+}
+
+In the above example, changing the 'color' property to green will overwrite the
+property change to red because it comes second in order (or in this case, last).
+In this case, the last CSS rule has priority over everything above it.
+
+It would be better to use classes to change an elements properties as they are
+more specific. Also, using the class of the above <h1> to change its 'color'
+property will override the above CSS styling.
+
+.title {
+    color: yellow;
+}
+
+Using an elements id to change the elements properties has an even higher
+priority.
+
+#heading {
+    color: blue;
+}
+
+Finally, using inline styles to change an elements properties has the highest
+priority and overrides all the external styling on the same element propertiess.
+
+<h1 id="heading" class="title" style="color: orange;">Hello World</h1>
+
+
+How to avoid conflicting rules:
+
+Doing all the above at once is very inefficient and prone to bugs and errors.
+
+Steps to take to avoid conflicting rules:
+1. Use ids sparingly. Don't us an id unless something absolutely needs it.
+   Otherwise, use a class.
+
+2. When applying a class to an element, it's best tot use just 1 class (bootstrap
+   likes to use classes though, which irks some people).
+
+3. Avoid inline styles at all costs. There are no cases where inline styles
+   can't be solve by external style sheets. It is seen as bad CSS coding
+   practice and lazy. 

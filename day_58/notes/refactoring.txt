@@ -1,0 +1,22 @@
+Refactor code as if the next person who reviews your code is an axe murderer.
+
+Guiding principles (order of importance):
+
+1. Readability
+    Easy to understand. Not just for yourself, but for your future self (for
+    when you come back to a particular code base in 6 months or a year or two),
+    can you understand what the code means after not seeing the code for a while.
+    Is the code laid out in a logical way and commented so it is easy to
+    understand. Also, can other people (who are working on the same code base)
+    understand it easily.
+
+2. Modularity
+    Is the code easy to re-use and how easy is it to narrow down any problems.
+
+3. Efficiency
+    Is the code efficient? How fast does the code run?
+
+4. Length
+    The length of code for a program or feature. Cutting down the length of code
+    for readability is great. But if cutting down the length of code makes the
+    code itself less readable and less comprehensible, then that's not good.

@@ -1,0 +1,25 @@
+Bootstrap is a front-end library.
+
+
+Front-end and back-end
+- The front end is the what users will see: the website or mobile app.
+- The back end is the behind-the-scenes business logic that resides on a server 
+  and handles how the website/mobile app works and things it has to do (the 
+  ovarall functionality of the website/app). 
+
+There are a number of programming languages associated with the front-end and 
+back-end.
+For the front-end: HTML, CSS, and javascript.
+For the back-end: .NET, Ruby, PHP, NodeJS, Java, Python, SQL (for databases).
+
+Bootstrap is for the front-end. It's a bunch of code that was written to be
+reusable, that can be dropped in to a site and make designing a website much 
+easier. 
+
+Bootstrap was originally developed by Twitter to get more consistance across 
+websites that they design. Since then, Twitter has made Bootstrap free and 
+open-source (Bootstraps source code can be accessed on GitHub).
+
+Bootstrap makes it easier to make websites and apps more responive and adaptable.
+Bootstrap also gives programmers access to pre-styled elements that can be 
+dropped into our code with minimal effort. 

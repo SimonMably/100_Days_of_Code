@@ -1,0 +1,12 @@
+When we try to access/request a website from a server over the internet, we do 
+it via underground and underwater cables. When we make the request, the server 
+can be anywhere in the world and there can be a delay.
+
+This is where a Content Delivery Network (CDN) comes in. If a website is hosted on a server in a single location, a CDN will find the shortest route
+possible (via underground/water cables) from the browser making the request to
+the server hosting the website. This cuts down the latency or the amount of time it takes for a website to load in the browser.
+
+Bootstrap host their Bootstrap CSS files on "Maxcdn", which have a number of 
+routing points across the world. 
+
+Look at Bootstrap documentation (Introduction, Starter Template section)

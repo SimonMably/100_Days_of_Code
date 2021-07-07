@@ -1,0 +1,37 @@
+Advanced CSS - Media Query Breakpoints (or Media Queries)
+
+Making sure that our websites are compatible on mobile phones and tablets.
+
+More and more people are browsing the web on mobile phones and tablets. It's a
+good idea to make websites mobile friendly.
+
+Options to make websites mobile friendly:
+1. Do nothing
+    If a website is not mobile friendly, looking through such a site
+    would not be a good experience for users. Also, non-mobile-friendly
+    sites don't rank too high in Google searches (they appear on the
+    2nd Google search page or beyond, which not many people go to).
+
+2. Make a separate mobile site
+    Many large companies have a separate mobile site that redirects users to if
+    they are using a mobile phone or a tablet to browse their website (a separate
+    site is not the same as an app). These mobile specific sites are created
+    specifically for mobile use.
+
+3. Make the website responsive
+    Arguably the best option, making a website responsive so it can adapt to
+    whatever device is used.
+
+
+How Media Queries are Structured
+
+@media <type> <feature>
+
+@media: keyword, this means that everything after the @media keyword is a
+        Media Query.
+
+<type>: type of media or medium that we are selecting on. eg, if the code is
+        being displayed on a screen or is being printed if it's on a screen
+        reader, etc.
+
+<feature>: this checks to see if the Media Query is true or false.
