@@ -59,7 +59,7 @@ I'll be using this repo as a way for myself to access them as, if and when I nee
     I unfortunately ended up getting to fustrated with the project and decided to move 
     on for the moment and come back to it at a later date.
 
-**Automated Instagram Follower Bot**
+**Automated Instagram Follower Bot - Day 52**
 
     The Instagram follower bot that I made does work, but there seems to be a slight 
     issue when it comes to the pressing of 'follow' buttons (in 'follow() method. 
@@ -68,3 +68,17 @@ I'll be using this repo as a way for myself to access them as, if and when I nee
     accounts stops working. The bot does continue clicking thse buttons though, the 
     buttons just doesn't activate. From some comments on the course, it seems to have 
     something to do with some sort of anti-bot mechanism.
+
+
+**Contact Form (POST request & HTML Forms)**
+
+    For this project, I had to learn ho to make POST request and apply that to
+    the HTML form for my blog capstone project along with using Pythons
+    smtplib library to send the contents of the form via email. 
+    Everything except the smtplib section of the project works. I keep recieving
+    a 'smtplib.SMTPAuthenticationError' exception. From what I've gathered from 
+    the error messages, the problem is with smtplib's .login() function. I do 
+    believe I done everything correctly, I even tried the solution provided by 
+    the course, and the 2 days worth of Googling hasn't been fruitful. 
+    Im going to move on to the next lessons for the time being, then come back 
+    sometime ing the future and hope I can find a solution.
