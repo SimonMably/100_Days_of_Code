@@ -1,0 +1,59 @@
+Template Inheritance
+
+1. This line of code tells the templating engine (Jinja) to use "base.html" as the template for this page.
+{% extends "base.html" %}
+
+2. This block inserts a custom title into the header of the template.
+{% block title %}Success{% endblock %}
+
+3. This block provides the content of the website. The part is going to vary between webpages.
+{% block content %}
+	<div class="container">
+		<h1>Top Secret</h1>
+		<iframe src="https://giphy.com/embed/Ju7l5y9osyymQ" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+		<p><a href="https://giphy.com/gifs/rick-astley-Ju7l5y9osyymQ">via GIPHY</a></p>
+	</div>
+{% endblock %}
+
+
+Super Blocks
+
+When we inherit from Python classes, you often see super.init()
+The super keyword refers to the parent that the child is inheriting from. e.g If Simba inherits from Mufasa, then
+Mufassa is the super.
+
+When we are inheriting templates. Sometimes, there's some part of the template that we want to keep, but we also want
+to add to it. So we can use super blocks in this case.
+
+An example of a block that will be inherited
+
+<style>
+    {% block styling %}
+    body {
+        background: purple;
+    }
+    {% endblock %}
+</style>
+
+The above block is called 'styling' (we can call it whatever we want) and it has been place within a <style> tag.
+All blocks must be closed with '{% endblock %}'.
+
+The above example will modify all web pages in a website that uses the same template (in this case, 'base.html').
+But, if we wanted to make an extra modification on top of this template for one specific web page, we can use a
+Super Block inside that specific web page to inherit the original template and add the extra modification.
+
+
+For example, the below Super Block will be placed inside 'denied.html' and will inherit the above
+block from 'base.html'.
+
+{% block styling %}
+    {{ super() }}
+    h1 {
+        color: red;
+    }
+{% endblock %}
+
+
+
+
+
