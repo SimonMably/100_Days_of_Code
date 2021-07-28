@@ -1,0 +1,110 @@
+SQLite is the most used database in the world. It's so popular that it's included
+in all Python installations by default. 
+
+---------------------------------------------------------------------------------
+Step 1.
+- Import the 'sqilite3' module
+
+Step 2.
+- Create a connection to a database (if the database does not exist then it will be created). 
+
+db = sqlite3.connect("books-collection.db")
+
+The above either:
+a) Connects to a SQLite database called "books-collection.db" if it exists
+or 
+b) If the datatbase doesn't exist, creates a SQLite database called 
+   "books-collection.db" and then connects to this database.
+
+Running tha Python program that this in will create the connection to the 
+database/create the database.
+
+Step 3.
+- Create a cursor that will control the database. This cursor will add rows, edit
+  and delete data. THe cursor will generally modify the database.
+
+
+Step 4.
+- Create a table in the database
+
+'cursor.execute("CREATE TABLE books (id INTEGER PRIMARY KEY, title varchar(250) NOT NULL UNIQUE, author varchar(250) NOT NULL, rating FLOAT NOT NULL)")'
+
+The above will create a new table. What it means:
+
+a) cursor - created in step 3. This is the mouse pointer in the database and will
+   be doing all the work (modifying the database).
+
+b) .execute() - This method will tell the cursor to execute an action. All actions
+   in SQLite databases are expressed as SQL (Structured Query Languade) commands.
+   These are almost like ENglish sentences with keywords written in ALL-CAPS. 
+   To see a list of these SQL command and what they mean, go to:
+   https://www.codecademy.com/articles/sql-commands
+
+c) CREATE TABLE - This will create a new table in the database. The name of the
+   table comes afterthis keyword. Docs: https://www.w3schools.com/sql/sql_ref_create_table.asp
+
+d) books - The name of the table that is being create with CREATE TABLE (step c).
+   'books' is just an example name for the above example.
+
+e) () - The parts taht come inside the parentheses after CREATE TABLE books ()
+   are going to be the fields in this table. In other words, they are the column 
+   headings of the table.
+
+f) id INTEGER PRIMARY KEY - This is the field (column heading), it's a filed called
+   "id" which is of data type "INTEGER" and will be the "PRIMARY KEY" for this 
+   table. The primary key is the one piece of data that will uniquely identify
+   this record in the table. For example, the primary key of humans might be 
+   their passport number because no two people in the same country has the same
+   passport number.
+
+g) title varchar(250) NOT NULL UNIQUE - This is the second field (column heading),
+   it's called "title" and it accepts a variable-length string composed of 
+   characters. The 250 in the brackets is the maximum length of the text. "NOT
+   NULL" means it must have a value and cannot be left empty. "UNIQUE" means no
+   two records in this table can have the same title.
+
+h) author varchar(250) NOT NULL- A field (column heading) called "author" that 
+   accepts variable-length strings upto 250 characters that cannot be left empty.
+
+i) rating FLOAT NOT NULL - A field (column heading) called "rating" that accepts
+   float (whole number) data and cannot be left empty.
+
+
+Step 5.
+- In order to view a database, we need to download some specialised software.
+  This software is called "DB Browser" and it is Operating System specific.
+  The DB Browser can be downloaded from: https://sqlitebrowser.org/dl/
+
+Step 6.
+- Once you've downloaded and installed DB Browser, open it and click on "Open 
+  Database" and select the database to open. We should see the 4 fields (column
+  headings) and the column with no data
+
+Step 7.
+- To add data to our table we can head back to main.py and write the following 
+  code:
+       cursor.execute("INSERT INTO books VALUES(1, 'Harry Potter', 'J. K. Rowling', '9.3')")
+        db.commit()
+  This will create a new entry in our books table for the Harry Potter book and commit the changes to our database.
+
+Step 8.
+- 'cursor.execute("CREATE TABLE books (id INTEGER PRIMARY KEY, title varchar(250) NOT NULL UNIQUE, author varchar(250) NOT NULL, rating FLOAT NOT NULL)")'
+
+The above line that created the table needs to be commented out (not doing so 
+will give the following error: sqlite3.OperationalError: table books already exists)
+
+Step 9.
+- Then close down the database in DB Browser by clicking Close Database. Otherwise, 
+  you'll get a warning about "database locked".
+
+Step 10.
+- Now run the code in main.py and re-open the database in DB Browser to see the 
+  updated books table. 
+
+
+NOTE: SQL queries are very sensitive to typos. Queries with typos will not get 
+      executed.
+
+There are much better ways of working with SQLite in Python projects, we can use 
+a tool called SQLAlchemy to write Python code instead of all these error-prone 
+SQL commands.
