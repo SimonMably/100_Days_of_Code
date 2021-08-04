@@ -1,0 +1,29 @@
+Web Design
+
+Web design is about designing websites in such a way that they have great functionality
+(so that they nice to use) and they also look great.
+
+The design of a website is how to get users to love the website.
+A website only has a few seconds before users start judging it by how it looks and
+how it works.
+Web design done well is one of the best/cheapest ways to make a companies website
+and/or product(s) look professional and expensive.
+
+
+Bad Web Design
+
+Attributes of a badly designed website:
+- Clashing colours
+- Too many different fonts
+- Poor functionality / doesn't work well or as expecte
+- Has loads of bugs.
+
+
+Principles of Web Design:
+- Colour Theory
+- Typography
+- User Interface Design (UI)
+- User Experience Design (UX)
+
+
+

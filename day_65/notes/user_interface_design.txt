@@ -1,0 +1,78 @@
+Manage ATTENTION with Effective User Interface (UI) Design
+
+1. Heirarchy
+    Ways of conveying information. In other words, displaying information 
+    in such a way that each bit of information draws the eyes in a certain 
+    order or heirarchy. For instance, displaying the most important 
+    information in a large bold font, displaying a slightly less important 
+    information in a smaller and less noticable font and displaying the 
+    least important information in a small lettering. 
+
+    For example, a birthday invite:
+
+    (Small font, least important info)
+    "Dear Jane, you are invited to
+
+    (Largest font, most important info, what the user should look at first)
+    John's 21st Birthday Party
+
+    (Small font, least important info)
+    Come eat, drink and be merry with john as he turn the big two-one!
+
+    (Medium font)
+    Saturday, May 19th 7:00PM - 12:00AM
+    
+    (Small font, least important info)
+    12 Street Road, Suburb Town
+
+    (Medium font)
+    RSVP by May 5th"
+
+
+
+Establishing Heirarchy 
+
+Heirarchy can be established in a number of ways. 
+
+1. Using Colour (this is the most obvious)
+    Colours that stand out and have contrast with their background tend to
+    be used for high heirarchy. Giving certain aspects to a website a 
+    colour that stands out will get a lot of notice from users.
+    For example, an online store having a white and grey background 
+    throughout the website that uses a green button to tell users to 'add 
+    the item that they're viewing to their basket'. 
+
+2. Size
+    Aspects of a bigger size tend to be looked at first, while the smaller 
+    items either get less notice or get looked at last (and then all the 
+    other sized aspects in between).
+
+3. Layout
+    We could, if we wanted to, choose layout the entire webpage as one big 
+    block of text and images. Or, we can choose to layout a webpage in a 
+    more interesting manner that has blocks of text or images brocken up 
+    into different sections. 
+    For example, Wikipedia is considered to have a bad layout, while 
+    Grammerly is considered to have a good layout. 
+
+4. Alignment
+    This is to do how everything is positioned on the webpage relative to 
+    each other. For example, if a header is center aligned and the 
+    accompanying body of text is left aligned, then it would seem like a 
+    bad fit. Otherwise, if the header and body of text were left aligned, 
+    for example, then it would seem that they are a good match, and it 
+    looks more consistant and more well designed. 
+    One of the easiest ways to make any sort of design we make look more 
+    professional is to reduce the number of alignment points.
+
+5. White Space
+    White space refers to the empty space around text and elements of the 
+    webpage. Having space around text, images and other elements will make 
+    a website much more nicer, muche more easier to read, and more 
+    professional. A website that lacks any or much whitspace makes it look 
+    like a crampt discount store.
+
+6. Audience
+    Arguably the most important thing about design - design for you 
+    audience. Think about what would appeal to them and what's important 
+    to convey to them. 

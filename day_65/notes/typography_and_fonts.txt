@@ -1,0 +1,58 @@
+Understanding Typography and How to Choose Fonts
+
+Choosing the Correct Fonts
+It's important to pick the proper fonts when designing a website. Choosing 
+the proper fonts will be determined by the mood of each website, the 
+target audience and, possibly, feedback.
+
+
+Out of all the fonts that exist, there are two large font families:
+
+1. Serif
+    Characters of a Serif font have little feet at the end of their 
+    central beams. They have these little feet because the Serif typeface 
+    was inspired by the marble carvings of 'Days of Yore'(??). 
+
+2. Sans-Serif
+    Characters in Sans-Serif fonts don't have the little feet that Serif
+    fonts have, Sans-Serif fonts have perfect right angles. 
+    The Sans-Serif typeface is considered to have highly readable fonts, 
+    though some are more readable and eligible than others. Sans-Serif
+    fonts are typically used in bodies of text for readability.
+
+
+
+The Emotion/Mood Behind Fonts
+
+Serif - Traditional (eg. Minion Pro), 
+        Stable (eg. Trajan), 
+        Respectable (eg. Baskerville)
+
+Sans-Serif - Sensible (eg. Helvetica),
+             Simople (eg. Avenir),
+             Straightforward (eg. Din)
+
+Script - Personal (eg. Freestyle Script),
+         Creative (eg. Adias Script Pro),
+         Elegant (eg. Snell Roundhand)
+
+Display - Friendly (eg. Vag Rounded),
+          Loud (eg. Gin),
+          Amusing (eg. Thirsty Rough)
+
+Modern - STYLISH (eg. Sackers Gothic), 
+         CHIC (eg. Gaotham),
+         SMART (eg. Futura)
+
+
+Combining Fonts
+When considering fonts to combine, it is recommended to keep it to around 
+2 fonts that should be similar in mood and time era (for example, 
+combining a modern looking font with an older font would look a bit 
+strange).
+The contrast between fonts is another thing to consider. A heading should 
+be a Serif font and the accompanying body of text should be a Sans-Serif 
+font or visa-versa. Also for contrast, the weights of the heading and body
+texts. The font of the heading should be of a bigger weight, or more bold,
+where as the font in the body should be of a lesser weight, or thinner 
+text.

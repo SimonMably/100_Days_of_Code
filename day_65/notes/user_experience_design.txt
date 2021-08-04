@@ -1,0 +1,130 @@
+User Experience (UX) Design
+
+
+User experience is meant ton be invisible. If you have a good experience 
+with a website, it's meant to be unobtrusive, it just lets you do your 
+thing and it makes it feel as if everything is easy and effertless.
+
+In order to give users a good experience, we have to think five things:
+
+1. Simplicity
+    Keeping things simple is always better than making things more complex 
+    or more cluttered.
+
+2. Consistency
+    It's a good idea to make designs as well as the fuctionality for the 
+    product(s) constistent. For example, if a website will have the same 
+    sort of elements troughout the website (e.g. a navigation bar), it 
+    would be consistent to have that element on each page look the same, 
+    and have the same functionality. 
+
+3. Reading Patterns
+    Taking into account peoples reading patterns (how people read). 
+    One of the most common reading patterns is called the 'F pattern'. 
+    With the F-patter, people start reading a block of text from the top 
+    left (what is considered the start of the first line), then read 
+    across that line to the right, then after finishing that line going to 
+    left (or start) of the next line. Then it's a case of repeating until 
+    everything has been read.
+    Another reading pattern is known as the 'Z-pattern' (or Z-layout). In 
+    this case, the eyes move across the web page in a zigzag (or Z) 
+    pattern. The z-pattern is good for certain types of websites (e.g. 
+    sites that are sparse, have a lot of video content or if users are 
+    trying to browse a website a little bit faster). Face book uses this 
+    type of layout.
+
+4. All Platform Design
+    In todays age, more and more people are using mobile phones and 
+    tabletS, as well as desk top computer and laptops, to browse the web. 
+    It's a good idea to make websites responsive (how the site adapts 
+    its' layout to fit a computing devices screen). Alternatively, make a 
+    site for desktop or laptop use and make a dedicated mobile-friendly 
+    site.
+
+5. Don't Use Your Powers for Evil
+    
+    Some designers and companies like to use UI/UX designs to do bad 
+    things. This is known as 'dark patterns'. 
+    These are patterns that are beneficial to the company or designer, 
+    but also, not necessarily what the user wants. It can argued that 
+    these patterns are a form of trickery. This is considered as a bad 
+    user experience. 
+    Examples:
+    - Amazon using the colour orange to point out the 'Checkout with 
+      Express Delivery' button next to a grey 'Checkout with 
+      Normal Delivery' button (tricking customers to spend more money on 
+      delivery)
+
+    - A designer placing a curved 1 pixel line on a Snapchat ad. Snapchat 
+      user may mistke the line as a hair, which users would want to get 
+      rid of and accidentally press on the ad (press, not click, since 
+      Snapchat is a mobile app) causing to go to website of whatever is 
+      being advertised. This is likely the designers intention since 
+      advertiser get paid per click. 
+
+    - An airline company selling travel insurance during the sale of each 
+      aiplane tickets and hiding the 'No Travel Insurance' option in a 
+      drop-down box (which is listed alphabetically with a bunch of 
+      actual insurance options). This is probably to make the 'No 
+      Insurance' option difficult to find (so that the airline company can make more money on unwanted insurance).
+
+    - Companies that use check boxs with text that is worded in confusing 
+      manner, which makes it unclear as to what users are signing up for.
+      Example:
+      "If you would like us to no longer continue to stop not sending you 
+      special deals and offrs every week, please indicate you are 
+      inclined to yes by not checking the box."
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

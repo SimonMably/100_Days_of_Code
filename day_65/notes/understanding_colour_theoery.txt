@@ -1,0 +1,89 @@
+Understanding Colour Theoery
+
+Colour theory is the art and science of creating the right colour pallet for a website.
+
+When picking colours for a website, we have to be aware of the mood of the 
+colour pallet. The predominant colour that is in our design really tells a story and it conveys a message to the user.
+
+Mood:
+-- Red - Love, energy, intensity.
+        For example, there are a lot of car adverts containing the colour red (e.g. a red car, a red background). The adverts are trying to
+        say "Hey, buy this car. It will make you energetic."
+
+-- Yellow - Joy, intellect, attention.
+        Yellow seems to be a very attention grabbing colour, which can be
+        great for a logo or headline, if done properly. But, if we are 
+        creating something that is designed to be looked at for a long 
+        period of time, then yellow might be too much when it comes to
+        getting attention. The yellow may hurt a users eyes or put them of
+        whatever they are looking at (e.g. an article or a poster advert).
+
+-- Green - Freshness, safety, growth
+        For example, grocery or food companies may use green as the 
+        predominant colour in there pallet because they want their 
+        customers to link their food with freshness and/or health.
+
+-- Blue - Stability, trust, serenity
+        Blue can be used by companies that want to convey that they are
+        trustworthy. For example, financial companies may choose the 
+        colour blue to let their customers know that they're not going to
+        run off with the customers money. 
+
+-- Purple - Royalty, wealth, femininity
+        For example, (apparently) a lot of 'payday' loan companies
+        seemingly choose purple as their predominant colour, especially 
+        the 'payday' loan companies that market themselves towards women.
+
+
+The important thing to think about is that we are making a conscience 
+decision when choosing a colour pallete. It's not just whatever colours we
+like or our favourite colours. It's actually what message we are trying to 
+convey to the user and picking an appropriate colour(s). 
+
+
+
+Combining Colours
+
+Usually, we won't be using a sinble colour for a design. We'll be using 2 
+or 3. This means we will have to think about what colours to combine. This 
+probably the most scientific part about Colour Theory. 
+
+Often, designers will rely on scientific ways of combining colours. 
+
+Analolous Colours
+For example, taking two colours that are right next to each other on a 
+colour wheel. This way we are creating what known as an Analolous Colour 
+Pallet. Designs that have this are considered harmonious and the colours 
+work really well together. 
+This type of colour pallet is good for navigation bars, the body of a 
+website, and a logo and its background. 
+What this sort of colour pallet is not good at is standing out (because 
+each colour on the colour wheel looks similar to the colour next to it). 
+
+Complementary Colours
+To create a colour pallet that will stand out can create what is known as 
+a Complimentary Colour Pallet (or a Clashing Pallet). This is where we can 
+take 2 colours from opposite side of the colour wheel. 
+The purpose of this type of colour pallet is to take 2 (or more) colours 
+opposite sides of the colour wheel, which makes these colours drastically 
+different from each other, and to pair them up to make them stand out. 
+For example, supermarkets pairing red meat with green fake 'bushes/grass' 
+to make the meat stand out. E
+It's ok to do this to pair 2 different colours in logos/icons or different 
+coloured item, but not so much when it comes to coloured text on an 
+opposite coloured background. 
+Applying a Complimentary Colour Pallet to a coloured text on a opposite 
+coloured background would be quite jarring and would hurt the eyes to 
+look at. For text/background colour pallet, it would be better to use a
+Alalolous Colour Pallet.
+For example, dark green on a red background is a bad combination, while 
+white text on a somewhat brightish green is a good combination.
+
+Other Types of Combinations
+There are other types of colour pallets that we can create. For example,
+the Triadic Colour Pallet - drawing a equalateral triangle inside the 
+colour wheel and using the colours at the 3 points as the colour pallet.
+
+Go to 'https://color.adobe.com/create/color-wheel' for more combinations 
+and to play around with a colour wheel.
+Or go to 'https://colorhunt.co/' for hand picked colour pallets.
