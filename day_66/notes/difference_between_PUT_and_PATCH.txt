@@ -1,0 +1,9 @@
+The Difference Between PUT and PATCH
+
+PUT:
+Updating an entry by replacing it with an entirely new entry. The entire entry
+gets updated (or replaced).
+
+PATCH:
+Only sends the piece of data that needs to be updated. Instead of the entire
+entry, PATCH just updates the exact thing that needs to be updated.
