@@ -1,0 +1,88 @@
+Encryption and Hashing
+
+Storing passwords as plain text in a database is level 1 encryption/security. It's
+stored at server level and makes it a little difficult for people to get to, but
+it's not safe enough.
+
+
+Improving security of a website to level 2 authentication
+
+Level 2 authentication involves the use of encryption. Encryption is just scrambling
+something so that people can't tell what the original was unless they were in on the
+secret and they knew how to unscramble it. This is exactly the same as if someone
+and their friend were sending each other secret messages and both had a key to encode
+and decode messages.
+
+Their are many types of encryption and ciphers. Some well known types encryption
+and ciphers include:
+- The Enigma Machine
+- Caesar Cipher (letter substitution cipher)
+
+Essentially, all encryption works the same way. You have a way of scrambling a message and it requires
+a key to bea ble to unscramble that message.
+
+
+
+Level 3 Authentication - Hashing
+
+Previously with encryption
+
+------------     -------     Cipher Method      --------------
+| Password |  +  | Key |  ------------------->  | Ciphertext |
+------------     -------                        --------------
+
+Taking the users password and securing it using an encryption key, and then using a particular cipher
+method, be it a Caesar cipher or Enigma cipher, no matter which way we chose, we always had a password,
+a key. and we ended up with some cipher which will make it hard for people to be able to immediately
+guess what the user's password is.
+
+For example, if we use Caesars Cipher,
+------------     -------     Cipher Method      --------------
+|  qwerty  |  +  |  1  |  ------------------->  |   rvfsux   |
+------------     -------                        --------------
+
+The password is "qwerty", the key is a sift by *any number* (to the right), the password gets put
+through the Cipher method and the output will be "rvfsux".
+To decode/decrypt the above, we would have to swap the cipher method (Caesar Cipher in this example)
+with the key (shift to the left) (which will have to be known and the shift number to know the #
+original password:
+
+------------      Cipher Method     -------     --------------
+|  qwerty  |  <-------------------  |  1  |  +  |   rvfsux   |
+------------                        -------     --------------
+
+The Caesar Cipher is not a recommended type of encryption because it is considered very weak and easy
+to decode.
+
+
+How to Make a Password More Secure
+
+The biggest flaw in using the above authentication method is the fact that it needs encryption key to
+encrypt and decrypt passwords. The chances are that if someone is motivated enough to spend time and
+hack into a database, then it won't be difficult for them to also be able to get the encryption key,
+even if  that encryption key is saved in an environment variable or somewhere secure on a server.
+
+This problem can be addressed withe "hashing". Whereas previously with encryption we needed that
+encryption key, hashing takes it away and no longer requires the need for an encryption key,
+
+------------     Hash Function      --------
+| Password |  ------------------->  | Hash |
+------------                        --------
+
+
+While hashing a password, an encryption key isn't needed to decrypt a password back into plain text.
+when a user registers a password on a website, a hash function is used to turn that password into a
+hash and the website stores that hash in their database.
+The problem is that hash functions are mathematical equations that are designed to make it almost
+impossible to go backwards. In other words, it's almost impossible to turn a has back into a password. This also
+makes it difficult for hackers to retrieve passwords from websites.
+
+So, when a user tries to register on a website, the website asks them for the registration password, which is
+turned into a hash using a hash function, and then the website stores that hash in their database.
+At a later point when the user tries to log in and they type in their password, then the website will hash that
+password that they typed in to produce a hash that is then compared against the has that was stored in the
+websites database. If these 2 hashes match, then that must mean that the login password is the same as the
+registration password.
+At no point in this process does the website has to store the users password in plain text or are the able to
+reverse the process to figure out their original password. The only person who knows their password is the
+user themselves.

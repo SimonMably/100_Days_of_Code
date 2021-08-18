@@ -1,0 +1,23 @@
+What is Authentication
+
+
+Why Authenticate?
+
+1. Websites allow users to post data on their websites. This user posted data will
+   include things like blog post, images, videos, comments, likes and upvotes, etc.
+   Authentication will give users an "id", like an account that they can log into
+   with a username and password. Users will then be able to use this authentication
+   to associate their accounts with their posted data.
+
+2. Authentication also allows websites to restrict access to certain areas of their
+   websites depending of the status of each individual user.
+   For example, Spotify and Netflix charge their users for some or all of their
+   content for users to access. Once users pay, Spotify and Netflix will have to
+   update the users account in their databases to say that these users have paid
+   and the users will be allowed to access the show/films and songs that they're
+   entitled to.
+
+
+Authentication can be done in a number of ways. Creating a website where we sign up
+and log in users seems simple enough, but the difficult part of authentication
+comes from how secure the website will be. 
