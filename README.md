@@ -70,7 +70,7 @@ I'll be using this repo as a way for myself to access them as, if and when I nee
     something to do with some sort of anti-bot mechanism.
 
 
-**Contact Form (POST request & HTML Forms)**
+**Contact Form (POST request & HTML Forms) - Day 60**
 
     For this project, I had to learn ho to make POST request and apply that to
     the HTML form for my blog capstone project along with using Pythons
@@ -82,3 +82,9 @@ I'll be using this repo as a way for myself to access them as, if and when I nee
     the course, and the 2 days worth of Googling hasn't been fruitful. 
     Im going to move on to the next lessons for the time being, then come back 
     sometime ing the future and hope I can find a solution.
+
+
+**Blog Site - Day 69**
+
+    Took a while, mainly because I wanted to add some extra things (pagination for example).
+    I also tried to find out how to incorporate some sort of reply system to the comments, but I haven't find any examples or anything yet. I'll do this in the future.
