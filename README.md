@@ -88,3 +88,11 @@ I'll be using this repo as a way for myself to access them as, if and when I nee
 
     Took a while, mainly because I wanted to add some extra things (pagination for example).
     I also tried to find out how to incorporate some sort of reply system to the comments, but I haven't find any examples or anything yet. I'll do this in the future.
+
+
+**Hosting Blog on Heroku - Day 70**
+
+    The notes I've written for this day are in this repository, I've also placed the blog into it's own repository to make it easier to link to and host on Heroku. 
+    The blog is essentially the same as the blog in day 69. The only differences are that it uses a Postgres database instead of SQLite and the blog posts. 
+
+    The repository for this blog can be found [here](https://github.com/SimonMably/100_days_of_code_blog).

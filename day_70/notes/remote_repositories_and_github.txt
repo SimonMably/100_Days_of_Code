@@ -1,0 +1,47 @@
+Remote Repositories
+
+A remote repository is repository that hosted on someone else's server or computer.
+There are a few websites that offer remote repository services, usually for free for
+the most part. The most popular of these is GitHub.
+
+
+Steps to Create a Remote Repository - GitHub will be used as an example
+(GitHub account needed)
+
+1. On GitHub, create remote repository (when committed, files from local repository
+   will be stored here. Give this a name, a description and decide to make the
+   repository public or private. Also decide to initialise repository with README
+   file (this doesn't need to be done now as we can push one of these files to the
+   remote repository later)
+
+2. Decide on how to set up the remote repository. This can be done either with GitHubs
+   desktop client or via the command-line with GitHubs instructions.
+
+   Type in 'git remote add origin <remote repository link>' (link is provided by
+   GitHub) and enter.
+   Then type in 'git push -u master' (GitHubs new convention is 'main', not 'master')
+   and enter.
+   The 'master'/'main' refers the main default branch for the repository.
+   This step will send everything in the local repository to the remote repository.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

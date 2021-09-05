@@ -1,0 +1,95 @@
+Version Control
+
+Version control is all about having multiple versions pf ones projects so just in
+cas at some point down the line, something goes wrong with the project, we could
+revert to or go back to a previous version.
+
+
+How Would This Work
+
+Say we have a file and we add some code to it. We could then save this file to a
+Version Control software, for example, Git (Git is the most popular and well used
+Version Control software). This newly saved file under Version Control be the first
+version.
+Later on, progress will be made on this file as more lines of code are added. Here,
+we could make another save point and save it under our Version Control. This will
+be version 2. We can keep making versions of our software and programs like this as
+we make progress on our programs.
+Now, at some point, something may go wrong with an entire code file to the point
+that it's irreparable and it's beyond repair.
+In situations like this, with Version Control we can simply go back to a previous
+version (or save point) where the code wasn't broken and carry on from there. And
+by previous version, that doesn't necessarily mean the last version, we could go as
+far back or forward as want, as long as we know which version we want.
+
+
+Using Version Control (Git)
+
+Useful Git commands:
+
+- git init - Initialises Git in a directory/folder
+
+- git add <filename> - Adds the specified file to a staging area
+- git add .          - Adds all files in a Git initialised directory to a staging area.
+
+Note: The staging area is an intermediate place where we can pick and chose which files
+      inside our working directory that we want to commit.
+
+- git status - Displays all files in the working directory that are either being tracked
+               or not being tracked by Git. Files displayed in red text are untracked
+               files. Where as, files displayed in green text are being tracked (these
+               files are in the staging area).
+
+- git commit -m "<message>" - Saves tracked files in Git. The '-m' is the message flag,
+                              while a commit message goes in the quote marks. Having a
+                              message with each commit helps keep track of what changes
+                              we've made in that commit.
+                              With each save point (each commit), we should be as explicit
+                              as possible about what changes were made between the last
+                              save point and the current save point.
+
+- git log - Shows logs for all commits for working directory. Each log displays the commit
+            hash, the author of the commit, the date and time of the commit and the commit
+            message.
+
+- git checkout - Allows user to revert back / roll back to the previous/last position in the
+                 local repository. Needs to specify a file.
+
+- git diff - Along with a specified file, allows user to see the difference between the file
+             in the previous commit (anything that was deleted in red) and the current
+             commit (anything that was added in green).
+
+Working Directory    |     Staging Area     |    Local Repository
+---------------------|----------------------|------------------------
+This is the folder   | The staging area is  | Using the 'git commit' command
+or directory where   | where all files that | any tracked file in the staging
+we initialise the    | Git is tracking are  | area will be brought from the to
+repository.          | kept.                | staging area the local repository.
+When the 'git init'  | This staging area is |
+command is used in a | here because we may  | Each time we use the 'git commit'
+folder, Git will try | not want all our     | command, it will commit any new tracked
+and track the changes| files to be tracked  | files from the staging area with the
+it sees between the  | or committed.        | already committed files and make a new
+working directory and| The staging area is  | version as the working repository. Each
+the local directory. | a good place to      | commit will be given it's own unique name
+All untracked files  | figure out what are  | through the commit message.
+will be kept here.   | things we want Git   |
+                     | to ignore and what   |
+If we want files to  | we want to be        |
+be tracked, we can   | tracked.             |
+use the 'git add'    | Once files are in the|
+command on them, then| staging area and we  |
+those files will     | are happy with all   |
+enter the staging    | changes that we are  |
+area.                | going to commit, then|
+                     | the next step is to  |
+                     | commit it the local  |
+                     | repository with the  |
+                     | 'git commit' command.|
+                     |                      |
+         git add ---------> git commit ---------->
+
+
+
+Local Repository - This is the local implementation of version control. In 
+other words, everything is done on a users own computer.
