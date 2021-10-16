@@ -96,3 +96,108 @@ I'll be using this repo as a way for myself to access them as, if and when I nee
     The blog is essentially the same as the blog in day 69. The only differences are that it uses a Postgres database instead of SQLite and the blog posts. 
 
     The repository for this blog can be found [here](https://github.com/SimonMably/100_days_of_code_blog).
+
+---
+
+## Contents
+
+| Day  | Topic | Project |
+|:----:|:----- |:------- |
+| 1 |  Working with variables in Python to manage data. | Band Name Generator|
+| 2 | Understanding data types and how to manipulate strings | Tip Calculator |
+| 3 | Control flow and logical operators | Treasure Island (command line game) |
+| 4 | Randomisation and Python lists | Rock, Paper, Scissors |
+| 5 | Python Loops | Password Generator |
+| 6 | Python functions & Karel | Escaping the Maze (Reeborgs Maze Challenge) |
+| 7 | Hangman | Hangman |
+| 8 | Function parameters | Caesars Cipher |
+| 9 | Dictionaries, nested dictionaries | Secret Auction |
+| 10 | Functions with outputs | Calculator |
+| 11 | Blackjack Capstone Project|
+| 12 | Scope | Number Guesing Game |
+| 13 | Debugging: how to find and fix errors in you code | 3 Interactive Code Exercises |
+| 14 | Higher Lower Game Project |  |
+| 15 | Local Development Environment Setup | The Coffee Machine |
+| 16 | Object Oriented Programming | The Coffee Machine in OOP |
+| 17 | The benefits of OOP | The Quiz Project |
+| 18 | Turtle module & the GUI | The Hirst Painting Project |
+| 19 | Instances, state and higher order functions | Turtle Race |
+| 20 | Animation and Coordinates | Snake Game, Part 1 |
+| 21 | Inheritance & List Slicing | Snake Game, Part 2 |
+| 22 | Building Pong |  |
+| 23 | Turtle Crossing Capstone Project |  |
+| 24 | Files, directories and paths | Mail Merge |
+| 25 | Working with CSV data and Pandas | U.S. States Game |
+| 26 | List Comprehension | NATO Alphabet |
+| 27 | Tkinter, *args, **kwargs and creating GUI programs | Mile to Kilometer Converter |
+| 28 |  |  |
+| 29 |  |  |
+| 30 |  |  |
+| 31 |  |  |
+| 32 |  |  |
+| 33 |  |  |
+| 34 |  |  |
+| 35 |  |  |
+| 36 |  |  |
+| 37 |  |  |
+| 38 |  |  |
+| 39 |  |  |
+| 40 |  |  |
+| 41 |  |  |
+| 42 |  |  |
+| 43 |  |  |
+| 44 |  |  |
+| 45 |  |  |
+| 46 |  |  |
+| 47 |  |  |
+| 48 |  |  |
+| 49 |  |  |
+| 50 |  |  |
+| 51 |  |  |
+| 52 |  |  |
+| 53 |  |  |
+| 54 |  |  |
+| 55 |  |  |
+| 56 |  |  |
+| 57 |  |  |
+| 58 |  |  |
+| 59 |  |  |
+| 60 |  |  |
+| 61 |  |  |
+| 62 |  |  |
+| 63 |  |  |
+| 64 |  |  |
+| 65 |  |  |
+| 66 |  |  |
+| 67 |  |  |
+| 68 |  |  |
+| 69 |  |  |
+| 70 |  |  |
+| 71 |  |  |
+| 72 |  |  |
+| 73 |  |  |
+| 74 |  |  |
+| 75 |  |  |
+| 76 |  |  |
+| 77 |  |  |
+| 78 |  |  |
+| 79 |  |  |
+| 80 |  |  |
+| 81 |  |  |
+| 82 |  |  |
+| 83 |  |  |
+| 84 |  |  |
+| 85 |  |  |
+| 88 |  |  |
+| 89 |  |  |
+| 90 |  |  |
+| 91 |  |  |
+| 92 |  |  |
+| 93 |  |  |
+| 94 |  |  |
+| 95 |  |  |
+| 96 |  |  |
+| 97 |  |  |
+| 98 |  |  |
+| 99 |  |  |
+| 100 |  |  |

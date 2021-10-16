@@ -1,0 +1,51 @@
+body {
+    background-color: #F9F9F9;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Cormorant Garamond";
+    font-weight: 700;
+    text-align: left;
+}
+
+p {
+    font-family: "Roboto", condensed;
+    font-weight: 300;
+    padding: 0 10px 15px;
+}
+
+footer {
+    text-align: center;
+}
+
+/* Nav Bar */
+.navbar {
+    font-family: "Roboto";
+    font-size: 1.2rem;
+}
+
+/* Sections */
+.section {
+    width: auto;
+    padding: 30px;
+    margin: 3rem;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 50px;
+}
+
+/* .subheader {
+    text-align: left;
+} */
+
+.paragraph-text {
+    text-align: left;
+}
+
+.image-of-me {
+  border-radius: 50%;
+  left: 10%;
+}

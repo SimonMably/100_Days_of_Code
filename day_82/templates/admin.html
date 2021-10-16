@@ -1,0 +1,41 @@
+{% extends 'bootstrap/base.html' %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block content %}
+
+
+{% include "header.html" %}
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+                <div class="page-heading">
+                    {% if register_admin: %}
+                        <h1>Register as Admin</h1>
+                    {% elif login_admin: %}
+                        <h1>Login as Admin</h1>
+                    {% elif add_project_to_database: %}
+                        <h1>Add a Project to Portfolio</h1>
+                    {% elif delete_project_from_database: %}
+                        <h1>Delete a Project from Portfolio</h1>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+                {% if add_project: %}
+                    {{ ckeditor.load() }}
+                    {{ ckeditor.config(name='body') }}
+                {% endif %}
+                {{ wtf.quick_form(form, novalidate=True, button_map={"submit": "primary"}) }}
+            </div>
+        </div>
+    </div>
+
+
+{% include "footer.html" %}
+{% endblock %}
