@@ -1,6 +1,14 @@
 {% include "header.html" %}
 
-    <div id="intro" class="section">
+    <div class="section" id="intro">
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for message in messages %}
+                    <p>{{ message }}</p>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+
         <div class="row">
             <div class="col-lg-6">
                 <img src="{{ url_for('static', filename='images/me.png') }}" class="image-of-me" alt="An old image of me">
@@ -8,25 +16,16 @@
             <div class="col-lg-6">
                 <h1 class="intro-header">I'm Simon</h1>
                 <br />
-                <h4 class="intro-sub-header">About my Programming Experience</h4>
-                <p class="paragraph-text">
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in
-                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum."
+                <!-- <h4 class="intro-sub-header">About my Programming Experience</h4> -->
+                <p>
+                    Currently going through self-learning programming route, I 
+                    have an interest in scripting, back-end web development and 
+                    GUI develepment with Python. 
                 </p>
-                <h4>A Little Bit About Me</h4>
-                <p class="paragraph-text">
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in
-                    reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                    nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                    sunt in culpa qui officia deserunt mollit anim id est laborum."
+                <p>                 
+                    Proceeding through the future, I hope to progress my abilities,
+                    aiming to learn a few more programming languages and possibly
+                    dabble in game development.
                 </p>
             </div>
         </div>
@@ -36,53 +35,44 @@
         <div class="section-container">
             <h1>Portfolio</h1>
             <hr>
-            <!-- TODO: Connect Portfolio Database -->
-            <!-- TODO: Add image/image link from database for each project ??? -->
-            <!-- TODO: Turn section into a list. Hopefully, When I add more
-                         this will automatically update. -->
-            <!-- TODO: Turn section into Bootstrap table thing like above. -->
-            <h3 class="subheader">Project 1: Morse Code Convertor</h3>
-            <p class="paragraph-text">
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ex ea commodo consequat. Duis aute irure dolor in
-                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                culpa qui officia deserunt mollit anim id est laborum."
-                <br><br>
-                <a href="#">Link</a> to project
-            </p>
-
-            <hr>
-
-            <h3 class="subheader">Project 2: </h3>
-            <p class="paragraph-text">
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ex ea commodo consequat. Duis aute irure dolor in
-                reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum."
-            </p>
+            {% for project in all_projects: %}
+                <div class="row">
+                    <div class="col-lg-6">
+                        <a href="{{ project.project_url }}" target="_blank">
+                            <img class="project-img" src="{{ url_for('static', filename=project.img_name) }}" alt="Image of {{ project.project_name }}">
+                        </a>
+                    </div>
+                    <div class="col-lg-6 mx-auto portfolio-text">
+                        <h3 class="">{{ project.project_name }}</h3>
+                        <p>Made with: {{ project.made_with }}</p>
+                        <p class="">{{ project.project_description|safe }}</p>
+                        {% if current_user.id == 1: %}
+                            <a href="{{ url_for('delete_project', project_id=project.id) }}" class="btn btn-dark">Delete Project</a>
+                        {% endif %}
+                    </div>
+                </div>
+                <hr>
+                {% if all_projects|length <= 3 %}
+                    <div class="row">
+                        <h2 class="admin-title">More to come...</h2>
+                    </div>
+                {% endif %}
+            {% endfor %}
         </div>
     </div>
 
     <div id="contact-me" class="section">
-        <div class="container-fluid">
-            <h2>Contact Me</h2>
+        <div class="container-fluid admin-title">
+            
             <!-- Font Awesom icons here - Github, Twitter, LinkedIn, Email. -->
-            <p class="paragraph-text">
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ex ea commodo consequat. Duis aute irure dolor in
-                reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum."
-            </p>
+            <div class="contacts">
+                <h2>Contact Me</h2>
+                <a href="https://www.github.com/SimonMably"><i class="fab fa-github fa-5x"></i></a>
+                <a href="https://www.twitter.com/SimonMably"><i class="fab fa-twitter fa-5x"></i></a>
+                <a href="https://www.linkedin.com/in/simonmably/"><i class="fab fa-linkedin fa-5x"></i></a>
+            </div>
         </div>
+        <a href="{{ url_for('homepage') }}#title" class="btn btn-dark">Back to the top.</a>
     </div>
 
 {% include "footer.html" %}

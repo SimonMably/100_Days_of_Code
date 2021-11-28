@@ -2,7 +2,7 @@ body {
     background-color: #F9F9F9;
     font-family: "Open Sans", sans-serif;
     font-weight: 300;
-    align: center;
+    text-align: center;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -13,18 +13,62 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
     font-family: "Roboto", condensed;
-    font-weight: 300;
-    padding: 0 10px 15px;
+    font-weight: 400;
+    padding: 0 10px 0;
+    text-align: left;
+    line-height: 40px;
+}
+
+span h2 {
+    text-align: center;
 }
 
 footer {
     text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+}
+
+content p {
+    font-style: italic;
+    color:red;
+}
+
+label {
+    margin-top: 20px;
+}
+
+input {
+    margin-bottom: 10px
+    
+}
+
+.button {
+    padding-top: 20px;
+}
+
+.page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+.content-wrap {
+    /* Footer Height */
+    padding-bottom: 2.5rem; 
 }
 
 /* Nav Bar */
 .navbar {
     font-family: "Roboto";
     font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+#navbarDropdown {
+    color: #fff;
 }
 
 /* Sections */
@@ -37,15 +81,42 @@ footer {
     border-radius: 50px;
 }
 
-/* .subheader {
+.form-section {
+    width: auto;
+    height: auto;
+    padding: 30px;
+    margin: 3rem;
     text-align: left;
-} */
-
-.paragraph-text {
-    text-align: left;
+    background-color: #fff;
+    border-radius: 50px;
 }
 
 .image-of-me {
   border-radius: 50%;
   left: 10%;
+}
+
+.row {
+    padding: 2rem;
+}
+
+.admin-title {
+    text-align: center;
+}
+
+.project-img {
+    width: 100%;
+    border-radius: 10%;
+    border-style: solid;
+    border-color: #F9F9F9;
+    border-width: 5px;
+    margin-bottom: 2%;
+}
+
+.fab {
+    padding: 10px 20px 10px 20px;
+}
+
+.contacts {
+    padding-bottom: 50px;
 }

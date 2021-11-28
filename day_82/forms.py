@@ -18,14 +18,8 @@ class AdminLoginForm(FlaskForm):
 
 class AddProjectForm(FlaskForm):
     project_name = StringField("Project Name", validators=[DataRequired()])
-    project_description = CKEditorField("Project Description",
-                                        validators=[DataRequired()])
+    body = CKEditorField("Project Description", validators=[DataRequired()])
     project_url = StringField("Project URL", validators=[DataRequired(), URL()])
-    img_url = StringField("Project Image URL",
-                          validators=[DataRequired(), URL()])
+    img_name = StringField("Project Image Name", validators=[DataRequired()])
+    made_with = StringField("Made With", validators=[DataRequired()])
     submit = SubmitField("Add Project")
-
-
-class DeleteProjectForm(FlaskForm):
-    project_name = StringField("Project Name", validators=[DataRequired()])
-    submit = SubmitField("Delete Project")
